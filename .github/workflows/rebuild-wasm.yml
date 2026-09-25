@@ -1,0 +1,26 @@
+name: Rebuild DDS3 WebAssembly
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install pinned Emscripten toolchain
+        run: |
+          git clone --depth 1 https://github.com/emscripten-core/emsdk.git .build/emsdk
+          python .build/emsdk/emsdk.py install 5.0.7
+          python .build/emsdk/emsdk.py activate 5.0.7
+      - name: Rebuild from pinned DDS revision
+        run: python scripts/build_wasm.py
+      - run: npm ci
+      - run: npm test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dds3-wasm
+          path: vendor/dds/

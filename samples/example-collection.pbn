@@ -1,0 +1,32 @@
+% Reproducible generated deals selected by scripts/find-examples.mjs (seed 0xb71d9e).
+% Each demonstrates a supported pattern in the app's current single optimal line.
+% All contracts, play and findings are freshly computed; no results are embedded.
+[Event "Generated study deal 338"]
+[Board "338"]
+[Dealer "E"]
+[Vulnerable "All"]
+[Deal "N:5.A742.KT732.872 942.Q53.J8.QJT96 AJ8763.KJ.A4.AK4 KQT.T986.Q965.53"]
+
+[Event "Generated study deal 19"]
+[Board "19"]
+[Dealer "S"]
+[Vulnerable "NS"]
+[Deal "N:QJ98654.K63.K6.6 A2.98.AQT5.AKQ97 K7.T5.J9872.T843 T3.AQJ742.43.J52"]
+
+[Event "Generated study deal 318"]
+[Board "318"]
+[Dealer "E"]
+[Vulnerable "All"]
+[Deal "N:KT72.AJT832..843 9.KQ95.QT632.JT6 J84.764.A98.AQ95 AQ653..KJ754.K72"]
+
+[Event "Generated study deal 8"]
+[Board "8"]
+[Dealer "W"]
+[Vulnerable "EW"]
+[Deal "N:J7652.QJ98.K9.Q6 K4.KT76.J5.K8754 QT.52.Q872.AJT32 A983.A43.AT643.9"]
+
+[Event "Generated study deal 3"]
+[Board "3"]
+[Dealer "S"]
+[Vulnerable "NS"]
+[Deal "N:9873.65.T92.KT75 K5.Q973.A6.AQ642 J42.K82.KQ753.J9 AQT6.AJT4.J84.83"]

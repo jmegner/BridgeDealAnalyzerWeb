@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/dds-bridge/dds",
+  "revision": "84b061ead1bfc636517e371b18d63034966df1b3",
+  "emscripten": "5.0.7",
+  "threaded": false
+}

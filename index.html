@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#244c40" />
+    <meta
+      name="description"
+      content="Find squeezes, endplays, trump coups, dummy reversals and crossruffs in your bridge deals. Private, browser-based double-dummy analysis."
+    />
+    <title>Bridge Study · Deal Analyzer</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#workspace">Skip to hands</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Bridge Study home"
+        ><span class="brand-mark" aria-hidden="true">♠</span
+        ><span
+          >Bridge <strong>Study</strong><small>THE DEAL ANALYZER</small></span
+        ></a
+      >
+      <div class="header-right">
+        <span class="private-note"><i></i> Your cards stay on your device</span
+        ><button class="text-button" id="about-button">
+          How it works <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div>
+          <p class="eyebrow">A LITTLE CURIOSITY. A BETTER GAME.</p>
+          <h1>Find the lesson<br />in every deal.</h1>
+          <p class="intro-copy">
+            Turn your PBN files into a collection of hands worth studying.<br
+              class="desktop"
+            />
+            Discover the technique, then follow the play.
+          </p>
+        </div>
+        <div class="import-card" id="drop-zone">
+          <div class="import-icon" aria-hidden="true">↥</div>
+          <div>
+            <h2>Bring your hands to the table</h2>
+            <p>
+              Drop PBN files here, or choose them below.<br />One file or a
+              whole club session.
+            </p>
+          </div>
+          <input
+            type="file"
+            id="file-input"
+            accept=".pbn,.PBN,text/plain"
+            multiple
+            hidden
+          />
+          <button id="import-button" class="button primary">
+            Choose PBN files <span aria-hidden="true">＋</span>
+          </button>
+          <button id="sample-button" class="text-button">
+            Try a sample collection <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+      <section
+        class="workspace"
+        id="workspace"
+        aria-label="Hand collection and replay"
+      >
+        <div class="workspace-top">
+          <div>
+            <p class="eyebrow">YOUR STUDY TABLE</p>
+            <h2>
+              The hand collection
+              <span class="count-pill" id="board-count">0</span>
+            </h2>
+          </div>
+          <div class="collection-actions">
+            <button id="export-button" class="button secondary" disabled>
+              Export results ↓</button
+            ><button id="analyze-button" class="button primary" disabled>
+              Analyze hands <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+        <div id="progress-panel" class="progress-panel" hidden>
+          <div class="progress-heading">
+            <span id="progress-label" role="status" aria-live="polite"></span>
+            <div>
+              <button id="skip-button" class="text-button">
+                Skip this hand</button
+              ><button id="stop-button" class="text-button">
+                Stop analysis
+              </button>
+            </div>
+          </div>
+          <progress id="progress" max="1" value="0"></progress>
+        </div>
+        <div id="notice" class="notice" role="status" hidden></div>
+        <details id="import-errors" class="import-errors" hidden>
+          <summary id="error-summary"></summary>
+          <ul id="error-list"></ul>
+        </details>
+        <div class="study-layout">
+          <aside class="library" aria-label="Browse hands">
+            <div class="library-tools">
+              <label class="search"
+                ><span aria-hidden="true">⌕</span
+                ><input
+                  id="search"
+                  type="search"
+                  placeholder="Search boards, files, or suits…"
+                  aria-label="Search hands"
+              /></label>
+              <div class="filter-row">
+                <label
+                  >Technique<select id="technique-filter">
+                    <option value="">All techniques</option>
+                    <option>Squeeze</option>
+                    <option>Elimination / endplay</option>
+                    <option>Trump coup</option>
+                    <option>Dummy reversal</option>
+                    <option>Crossruff</option>
+                    <option value="none">No technique identified</option>
+                  </select></label
+                ><label
+                  >Suit<select id="suit-filter">
+                    <option value="">Any suit</option>
+                    <option value="0">♠ Spades</option>
+                    <option value="1">♥ Hearts</option>
+                    <option value="2">♦ Diamonds</option>
+                    <option value="3">♣ Clubs</option>
+                  </select></label
+                >
+              </div>
+            </div>
+            <div class="library-summary">
+              <span id="list-summary">Ready for your first hand</span
+              ><button id="clear-button" class="text-button" hidden>
+                Clear
+              </button>
+            </div>
+            <div id="board-list" class="board-list"></div>
+            <div class="library-footer">
+              <span class="local-dot" aria-hidden="true"></span
+              ><span id="save-status">Saved in this browser</span>
+            </div>
+          </aside>
+          <section class="study" id="study" aria-label="Selected hand">
+            <div class="study-empty" id="study-empty">
+              <div class="suit-decoration" aria-hidden="true">
+                <span>♣</span><span>♦</span><span>♠</span><span>♥</span>
+              </div>
+              <p class="eyebrow">THERE’S A STORY IN THE CARDS</p>
+              <h2>Your next “aha” moment<br />starts with a hand.</h2>
+              <p>
+                Import your deals, run the analysis, and choose a hand.<br />We’ll
+                show you the contract, the technique, and the play.
+              </p>
+              <div class="steps">
+                <div>
+                  <span>01</span><strong>Find the contract</strong>
+                  <p>Perfect bidding, including sacrifices.</p>
+                </div>
+                <div>
+                  <span>02</span><strong>Follow one line</strong>
+                  <p>Optimal play from all four seats.</p>
+                </div>
+                <div>
+                  <span>03</span><strong>Spot the technique</strong>
+                  <p>See the critical cards in action.</p>
+                </div>
+              </div>
+            </div>
+            <div id="hand-view" hidden></div>
+          </section>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <p>Made for the pleasure of understanding a hand.</p>
+        <span
+          >DDS3 powered <span aria-hidden="true">·</span> One optimal line, many
+          things to learn.</span
+        ><a
+          href="https://github.com/jmegner/BridgeDealAnalyzerWeb"
+          target="_blank"
+          rel="noreferrer"
+          >View source ↗</a
+        >
+      </footer>
+    </main>
+    <dialog id="about-dialog">
+      <button
+        class="dialog-close text-button"
+        id="close-about"
+        aria-label="Close explanation"
+      >
+        ✕
+      </button>
+      <p class="eyebrow">FROM DEAL TO DISCOVERY</p>
+      <h2>A study companion for your bridge hands.</h2>
+      <p>
+        Import one or more PBN files containing complete 52-card deals. DDS3
+        calculates the double-dummy table and dealer par: the score and
+        contracts reached by perfect bidding with all cards known, including
+        sacrifices and vulnerability.
+      </p>
+      <p>
+        For each board, we choose one par contract and generate a deterministic
+        line of optimal play. Every chosen card preserves the double-dummy
+        result.
+      </p>
+      <h3>What a technique label means</h3>
+      <p>
+        A label identifies a specific pattern demonstrated in that replay. It
+        does not mean the technique was necessary, or that other lines have been
+        searched. “No technique identified” means these detectors did not find a
+        supported pattern in this line.
+      </p>
+      <p>
+        The first version recognizes simple cashing squeezes, elimination with a
+        throw-in, direct trump-coup endings, dummy reversals, and repeated
+        crossruffs. Complex squeezes and other variants can be missed. Each
+        finding includes the evidence used to identify it.
+      </p>
+      <h3>Your files stay with you</h3>
+      <p>
+        Files are read and analyzed on your device. Results are saved in this
+        browser automatically. Export results to keep a separate JSON copy.
+        Clearing your browser’s site data removes the saved collection.
+      </p>
+      <p>
+        Large batches can take time. Stop keeps completed results; Analyze
+        resumes unfinished hands. One difficult hand can be skipped.
+      </p>
+      <p class="fine-print">
+        Inspired by
+        <a
+          href="https://bridgewinners.com/article/view/what-software-tells-of-play-techniques/"
+          target="_blank"
+          rel="noreferrer"
+          >Dan Egner’s idea</a
+        >. Solver:
+        <a
+          href="https://github.com/dds-bridge/dds"
+          target="_blank"
+          rel="noreferrer"
+          >DDS3</a
+        >
+        · <a href="./vendor/dds/LICENSE">Apache 2.0 license</a>.
+      </p>
+    </dialog>
+  </body>
+</html>

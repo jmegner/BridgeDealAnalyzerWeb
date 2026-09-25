@@ -1,0 +1,30 @@
+% Four complete deals from Brian Gunnell's ACBL Bridge Bites.
+% These are deal data only; the app computes a fresh par contract and optimal line.
+% The resulting line may differ from the published lesson.
+[Event "Bridge Bites 34: Dummy Reversal"]
+[Site "https://cdn.acbl.org/interactivebites/OLB034DummyReversal.htm"]
+[Board "1"]
+[Dealer "S"]
+[Vulnerable "None"]
+[Deal "N:AQJ.875.7532.QJ8 642.K6.QJT94.643 KT953.Q432..AK75 87.AJT9.AK86.T92"]
+
+[Event "Bridge Bites 37: Trump Coup"]
+[Site "https://cdn.acbl.org/interactivebites/OLB037TrumpCoup.htm"]
+[Board "2"]
+[Dealer "S"]
+[Vulnerable "None"]
+[Deal "N:T9.AQJ.A543.AQ52 K765.9654.Q72.K7 AQJ843.K72.K8.63 2.T83.JT96.JT984"]
+
+[Event "Bridge Bites 13: No Safe Exit"]
+[Site "https://s3.amazonaws.com/cdn.acbl.org/interactivebites/OLB013NoSafeExit.htm"]
+[Board "3"]
+[Dealer "S"]
+[Vulnerable "None"]
+[Deal "N:AQ654.K843.K7.76 K8.T.T8432.85432 732.AQJ972.AQ.AK JT9.65.J965.QJT9"]
+
+[Event "Bridge Bites 152: Dummy Reversal"]
+[Site "https://cdn.acbl.org/bites/152DummyReversal.pdf"]
+[Board "4"]
+[Dealer "S"]
+[Vulnerable "EW"]
+[Deal "N:8642.KQ9.KJ6.AKQ K97.6.9873.J9853 .AJT873.AQ5.T762 AQJT53.542.T42.4"]
