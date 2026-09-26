@@ -1,0 +1,6 @@
+{
+  "input": ".build/technique-benchmark/selected.json",
+  "fingerprint": "94d962bcaf62bc083051c49f50e59c6ac5a2d168c0d57ff1aa0b4087d5d51bc3",
+  "started": "2026-09-26T01:29:24.886Z",
+  "node": "v24.11.1"
+}

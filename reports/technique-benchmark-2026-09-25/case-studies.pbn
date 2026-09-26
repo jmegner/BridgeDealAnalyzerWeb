@@ -1,0 +1,272 @@
+% PBN 2.1
+% Each deal appears twice: normal line and a different DD-optimal continuation.
+
+[Event "Normal app line"]
+[Site "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/58  Writer    -  Roger on Squeezes/111_Q_c__Angel_Blue_Problems_C.lin"]
+[Date "????.??.??"]
+[Board "334"]
+[Dealer "E"]
+[Vulnerable "None"]
+[Deal "N:AJ4.T74.AKJ.AQJ9 3.AK862.QT7.K852 KQ9852.J53.53.T4 T76.Q9.98642.763"]
+[Declarer "S"]
+[Contract "4S"]
+[Result "10"]
+[BenchmarkID "d2a507e58415"]
+[Play "W"]
+D2 DK D7 D3
+S6 S4 S3 SQ
+C3 CA C2 C4
+S7 SA H2 S2
+ST SJ C5 SK
+D4 H4 H6 S5
+D6 H7 H8 S8
+D8 DA DT D5
+D9 DJ DQ S9
+C6 C9 C8 CT
+H9 HT HK H3
+C7 CJ CK H5
+HQ CQ HA HJ
+*
+
+[Event "Alternative DD-optimal line"]
+[Site "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/58  Writer    -  Roger on Squeezes/111_Q_c__Angel_Blue_Problems_C.lin"]
+[Date "????.??.??"]
+[Board "334"]
+[Dealer "E"]
+[Vulnerable "None"]
+[Deal "N:AJ4.T74.AKJ.AQJ9 3.AK862.QT7.K852 KQ9852.J53.53.T4 T76.Q9.98642.763"]
+[Declarer "S"]
+[Contract "4S"]
+[Result "10"]
+[BenchmarkID "d2a507e58415"]
+[Play "W"]
+HQ H4 H6 H3
+H9 H7 HK H5
+C6 HT HA HJ
+S6 S4 S3 S8
+C3 CA C2 C4
+D2 DK D7 D3
+S7 SA H2 S2
+ST SJ C5 SQ
+D4 C9 C8 S5
+D6 CJ H8 S9
+C7 CQ DT SK
+D8 DA DQ D5
+D9 DJ CK CT
+*
+
+[Event "Normal app line"]
+[Site "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/81  Watson/038  Watson 2 - 3.lin"]
+[Date "????.??.??"]
+[Board "129"]
+[Dealer "S"]
+[Vulnerable "NS"]
+[Deal "N:QJ5.A976.AQ52.A3 72.KQ.KT876.KJ75 AKT98.8532.94.Q6 643.JT4.J3.T9842"]
+[Declarer "S"]
+[Contract "4S"]
+[Result "10"]
+[BenchmarkID "54e40ab9da30"]
+[Play "W"]
+C2 CA C5 C6
+S3 S5 S2 S8
+S4 SJ S7 SK
+H4 HA HQ H2
+HT H6 HK H3
+D3 D2 D6 D9
+DJ DA D7 D4
+S6 SQ C7 S9
+HJ H7 D8 H5
+C4 C3 CK CQ
+C8 DQ DT H8
+C9 D5 DK ST
+CT H9 CJ SA
+*
+
+[Event "Alternative DD-optimal line"]
+[Site "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/81  Watson/038  Watson 2 - 3.lin"]
+[Date "????.??.??"]
+[Board "129"]
+[Dealer "S"]
+[Vulnerable "NS"]
+[Deal "N:QJ5.A976.AQ52.A3 72.KQ.KT876.KJ75 AKT98.8532.94.Q6 643.JT4.J3.T9842"]
+[Declarer "S"]
+[Contract "4S"]
+[Result "10"]
+[BenchmarkID "54e40ab9da30"]
+[Play "W"]
+CT C3 CK C6
+C2 CA C5 CQ
+S3 SQ S2 S8
+S4 S5 S7 S9
+H4 HA HQ H2
+HT H6 HK H3
+D3 D2 D6 D9
+DJ DA D7 D4
+S6 SJ C7 ST
+HJ H7 D8 H5
+C4 D5 CJ SK
+C8 H9 DT H8
+C9 DQ DK SA
+*
+
+[Event "Normal app line"]
+[Site "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/230  Endplays 6 - Quiz.lin"]
+[Date "????.??.??"]
+[Board "161"]
+[Dealer "N"]
+[Vulnerable "None"]
+[Deal "N:KQ5.Q2.AK984.654 976.J976.JT2.A98 A32.AKT543.3.J72 JT84.8.Q765.KQT3"]
+[Declarer "S"]
+[Contract "4H"]
+[Result "10"]
+[BenchmarkID "8a47b4f181cd"]
+[Play "W"]
+C3 C4 CA C2
+CQ C5 C8 CJ
+CT C6 C9 C7
+S4 SQ S6 S2
+S8 S5 S7 SA
+ST SK S9 S3
+H8 H2 H6 HT
+D5 DK D2 D3
+D6 DA DT H3
+D7 HQ H7 H4
+DQ D4 DJ H5
+SJ D8 H9 HK
+CK D9 HJ HA
+*
+
+[Event "Alternative DD-optimal line"]
+[Site "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/230  Endplays 6 - Quiz.lin"]
+[Date "????.??.??"]
+[Board "161"]
+[Dealer "N"]
+[Vulnerable "None"]
+[Deal "N:KQ5.Q2.AK984.654 976.J976.JT2.A98 A32.AKT543.3.J72 JT84.8.Q765.KQT3"]
+[Declarer "S"]
+[Contract "4H"]
+[Result "10"]
+[BenchmarkID "8a47b4f181cd"]
+[Play "W"]
+CK C4 C9 C2
+C3 C5 CA C7
+CQ C6 C8 CJ
+SJ S5 S6 SA
+H8 HQ H6 H3
+S4 H2 H7 HK
+D5 DK D2 D3
+D6 D4 DT H4
+S8 SQ S7 S2
+D7 D8 DJ H5
+ST SK S9 S3
+DQ DA H9 HT
+CT D9 HJ HA
+*
+
+[Event "Normal app line"]
+[Site "https://csbnews.org/en/recognizing-a-dummy-reversal-by-steve-becker/"]
+[Date "????.??.??"]
+[Board "407"]
+[Dealer "N"]
+[Vulnerable "All"]
+[Deal "N:K73.AJ5.A872.A86 984.863.K9643.T2 AJ6.KQT72.5.KQJ4 QT52.94.QJT.9753"]
+[Declarer "S"]
+[Contract "7H"]
+[Result "13"]
+[BenchmarkID "c0538e64d25b"]
+[Play "W"]
+S2 S7 S4 S6
+H4 H5 H3 HT
+H9 HJ H6 H2
+S5 S3 S8 SA
+ST SK S9 SJ
+C3 C6 C2 CJ
+C5 CA CT C4
+C7 HA H8 H7
+C9 C8 D3 CQ
+DT DA D4 D5
+DJ D7 D6 HQ
+SQ D2 D9 HK
+DQ D8 DK CK
+*
+
+[Event "Alternative DD-optimal line"]
+[Site "https://csbnews.org/en/recognizing-a-dummy-reversal-by-steve-becker/"]
+[Date "????.??.??"]
+[Board "407"]
+[Dealer "N"]
+[Vulnerable "All"]
+[Deal "N:K73.AJ5.A872.A86 984.863.K9643.T2 AJ6.KQT72.5.KQJ4 QT52.94.QJT.9753"]
+[Declarer "S"]
+[Contract "7H"]
+[Result "13"]
+[BenchmarkID "c0538e64d25b"]
+[Play "W"]
+DQ DA D3 D5
+DT D7 D4 H2
+H4 HJ H3 H7
+DJ D2 D6 HT
+H9 H5 H6 HQ
+C3 CA C2 C4
+S2 D8 D9 HK
+S5 SK S4 S6
+C5 HA H8 SJ
+C7 C6 CT CJ
+C9 C8 S8 CQ
+ST S3 S9 SA
+SQ S7 DK CK
+*
+
+[Event "Normal app line"]
+[Site "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/23  Lessons  -  Basic Defense Lessons/350   defenseexamples02.lin"]
+[Date "????.??.??"]
+[Board "143"]
+[Dealer "S"]
+[Vulnerable "None"]
+[Deal "N:6.8643.QJ6.AT974 K43.K5.943.KJ853 Q9752.A72.AK72.2 AJT8.QJT9.T85.Q6"]
+[Declarer "S"]
+[Contract "2D"]
+[Result "8"]
+[BenchmarkID "28d0cafb3727"]
+[Play "W"]
+D5 DJ D3 D2
+S8 S6 S3 S2
+C6 CA C3 C2
+CQ C9 C5 D7
+ST D6 S4 S5
+H9 H3 H5 HA
+SJ DQ SK S7
+HT H4 HK H2
+D8 C4 D4 DK
+DT H6 D9 DA
+SA C7 C8 S9
+HJ H8 CJ H7
+HQ CT CK SQ
+*
+
+[Event "Alternative DD-optimal line"]
+[Site "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/23  Lessons  -  Basic Defense Lessons/350   defenseexamples02.lin"]
+[Date "????.??.??"]
+[Board "143"]
+[Dealer "S"]
+[Vulnerable "None"]
+[Deal "N:6.8643.QJ6.AT974 K43.K5.943.KJ853 Q9752.A72.AK72.2 AJT8.QJT9.T85.Q6"]
+[Declarer "S"]
+[Contract "2D"]
+[Result "8"]
+[BenchmarkID "28d0cafb3727"]
+[Play "W"]
+HQ H3 HK HA
+S8 S6 S3 S2
+D5 DJ D3 D2
+C6 CA C3 C2
+CQ C4 C5 D7
+ST D6 S4 S5
+H9 C7 C8 DK
+SJ DQ SK S7
+HT C9 CJ DA
+HJ H4 H5 H2
+D8 H6 D4 H7
+DT H8 D9 S9
+SA CT CK SQ
+*

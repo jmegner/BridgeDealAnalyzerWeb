@@ -1,0 +1,41 @@
+{
+  "baseline_commit": "3fd8883e673ed698de85e9cddc7c87faafd7f1aa",
+  "analysis_version": 1,
+  "date": "2026-09-25",
+  "python": "3.14.0",
+  "node": "v24.11.1",
+  "selected_deals": 412,
+  "label_assignments": 414,
+  "source_formats": {
+    "pbn": 159,
+    "lin": 196,
+    "html": 57
+  },
+  "selected_source_downloads": 167,
+  "metadata_assumptions": 86,
+  "gathered_pbn_lin_files": 2752,
+  "gathered_complete_records": 33077,
+  "gathered_file_formats": {
+    "lin": 2558,
+    "pbn": 194
+  },
+  "source_prefix_errors": 27,
+  "files": {
+    "src/analyze.js": "82c98ab78b9f3e33218f1cd851700919a4dc83d7e4f173e5c50169b2f6610fac",
+    "src/techniques.js": "2d78a1fa00bc397b306adfeb1971bdd4f5d3483f0e9a09e0c71be24f7480bcd4",
+    "src/solver.js": "1e2874297f8b2bcce736ac5641c12c20c69d6dba57ed5e11ac2e2075e0827a9e",
+    "src/bridge.js": "343b8ff2ca29153a2bd5f9ae05fd082447745ea3b9f0d59867fa1fb51a1912ed",
+    "src/pbn.js": "ac536c7de49e005ce0f9ba3a7f9b87c19c5c81c40723cf550e298aefdc007aa9",
+    "vendor/dds/dds.wasm": "83623555a63ffb3ce938b7383f440a7c482cd98e621546f9d20e13ec5456b07b",
+    "scripts/benchmark-aces.py": "e489e67dad87bdf402cb0714d3af0cb6fe1473f52c5d758ab2fbda1369c6a584",
+    "scripts/benchmark-cases.mjs": "6ff8c888ac78972c87622d091518700d701f0da5451f011bd8fb3e0deffe4873",
+    "scripts/benchmark-export.py": "3e0590408f6f165f1eb57e9933a3c748f6dbde0b4cfe51a6512565905f6a83f9",
+    "scripts/benchmark-fetch.py": "d0ac50acab12265dfc7b9b572c5fdda06be522151f18e455bae88edb973ae814",
+    "scripts/benchmark-ingest.py": "7801a142b54368a2d2f9f0a35793be72059efd50d2373b900d90905166c24374",
+    "scripts/benchmark-rp.py": "55c5a410ce4723a45bb79fbed22949cc103deb5a0116259ba1a31dd7a4bc12aa",
+    "scripts/benchmark-run.mjs": "5dd03f6c17aed44b5ddb915f96c37918ec7f84804e6d0ec2d8362ecc9a94d83d",
+    "scripts/benchmark-select.py": "fa89824723da6c5d8c1876d217f8608c4e6f9e0eb705a46cc5fe0a0485d275d4",
+    "scripts/benchmark-supplement.py": "891d00981ea5d3f7a21363370e5d704161c41c85aa3b8687bcb67eadbdccaa64",
+    "scripts/benchmark-verify.mjs": "a137f66e4a25407004bd5e8a04a154caee56e155c515a92e1a4a13d905b00c3f"
+  }
+}

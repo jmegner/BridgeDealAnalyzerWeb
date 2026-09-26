@@ -1,0 +1,148 @@
+[
+  {
+    "technique": "Squeeze",
+    "n": 172,
+    "normal": 7,
+    "published": 5,
+    "same_strain_declarer": 31,
+    "same_strain_declarer_hit": 0,
+    "source_prefix_available": 21,
+    "source_prefix_hit": 4,
+    "source_prefix_dd_optimal": 13,
+    "source_prefix_dd_optimal_hit": 1,
+    "source_prefix_dd_optimal_rescues": 1,
+    "source_formats": {
+      "pbn": 151,
+      "lin": 21
+    },
+    "tiers": {
+      "book-topic": {
+        "n": 131,
+        "normal": 3,
+        "published": 2
+      },
+      "individual": {
+        "n": 41,
+        "normal": 4,
+        "published": 3
+      }
+    },
+    "explicit_metadata": {
+      "n": 171,
+      "normal": 7
+    }
+  },
+  {
+    "technique": "Elimination / endplay",
+    "n": 65,
+    "normal": 4,
+    "published": 4,
+    "same_strain_declarer": 24,
+    "same_strain_declarer_hit": 2,
+    "source_prefix_available": 59,
+    "source_prefix_hit": 7,
+    "source_prefix_dd_optimal": 44,
+    "source_prefix_dd_optimal_hit": 5,
+    "source_prefix_dd_optimal_rescues": 2,
+    "source_formats": {
+      "lin": 65
+    },
+    "tiers": {
+      "individual": {
+        "n": 65,
+        "normal": 4,
+        "published": 4
+      }
+    },
+    "explicit_metadata": {
+      "n": 13,
+      "normal": 0
+    }
+  },
+  {
+    "technique": "Trump coup",
+    "n": 63,
+    "normal": 5,
+    "published": 9,
+    "same_strain_declarer": 31,
+    "same_strain_declarer_hit": 5,
+    "source_prefix_available": 57,
+    "source_prefix_hit": 14,
+    "source_prefix_dd_optimal": 47,
+    "source_prefix_dd_optimal_hit": 12,
+    "source_prefix_dd_optimal_rescues": 10,
+    "source_formats": {
+      "lin": 35,
+      "pbn": 2,
+      "html": 26
+    },
+    "tiers": {
+      "individual": {
+        "n": 63,
+        "normal": 5,
+        "published": 9
+      }
+    },
+    "explicit_metadata": {
+      "n": 47,
+      "normal": 4
+    }
+  },
+  {
+    "technique": "Dummy reversal",
+    "n": 52,
+    "normal": 9,
+    "published": 10,
+    "same_strain_declarer": 24,
+    "same_strain_declarer_hit": 8,
+    "source_prefix_available": 38,
+    "source_prefix_hit": 22,
+    "source_prefix_dd_optimal": 25,
+    "source_prefix_dd_optimal_hit": 12,
+    "source_prefix_dd_optimal_rescues": 8,
+    "source_formats": {
+      "lin": 20,
+      "pbn": 1,
+      "html": 31
+    },
+    "tiers": {
+      "individual": {
+        "n": 52,
+        "normal": 9,
+        "published": 10
+      }
+    },
+    "explicit_metadata": {
+      "n": 41,
+      "normal": 9
+    }
+  },
+  {
+    "technique": "Crossruff",
+    "n": 62,
+    "normal": 25,
+    "published": 26,
+    "same_strain_declarer": 29,
+    "same_strain_declarer_hit": 14,
+    "source_prefix_available": 43,
+    "source_prefix_hit": 23,
+    "source_prefix_dd_optimal": 18,
+    "source_prefix_dd_optimal_hit": 14,
+    "source_prefix_dd_optimal_rescues": 7,
+    "source_formats": {
+      "lin": 57,
+      "pbn": 5
+    },
+    "tiers": {
+      "individual": {
+        "n": 62,
+        "normal": 25,
+        "published": 26
+      }
+    },
+    "explicit_metadata": {
+      "n": 56,
+      "normal": 22
+    }
+  }
+]

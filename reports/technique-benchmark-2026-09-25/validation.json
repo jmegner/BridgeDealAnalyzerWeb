@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "packs": {
+    "all": 412,
+    "squeeze": 172,
+    "elimination-endplay": 65,
+    "trump-coup": 63,
+    "dummy-reversal": 52,
+    "crossruff": 62
+  },
+  "replaysVerified": 1041,
+  "pairedPbnPlayTablesVerified": 10,
+  "normalBoards": 412,
+  "downloadHashesVerified": 167,
+  "nativeImports": [
+    {
+      "path": ".build/technique-benchmark/raw/040fc08ecea90ffc/0_squeeze_wb.PBN",
+      "boards": 0,
+      "errorCount": 1,
+      "errors": [
+        ".build/technique-benchmark/raw/040fc08ecea90ffc/0_squeeze_wb.PBN: Unclosed comment or quoted tag."
+      ]
+    },
+    {
+      "path": ".build/technique-benchmark/raw/040fc08ecea90ffc/1_squeezex_bw.pbn",
+      "boards": 25,
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "path": ".build/technique-benchmark/raw/11a18fb90d763e5c/W4EURNOR.PBN",
+      "boards": 24,
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "path": ".build/technique-benchmark/raw/1b478d8c45ea5ca8/bermuda2000.pbn",
+      "boards": 96,
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "path": ".build/technique-benchmark/raw/21da2d542f6e0922/Q2PART1.PBN",
+      "boards": 13,
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "path": ".build/technique-benchmark/raw/343ed476a5fb249c/0_romanet.PBN",
+      "boards": 9,
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "path": ".build/technique-benchmark/raw/5aa732fa042e4c9c/3BUSAITA.PBN",
+      "boards": 24,
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "path": ".build/technique-benchmark/raw/82302ad33bd2f009/Squeeze.pbn",
+      "boards": 20,
+      "errorCount": 1,
+      "errors": [
+        ".build/technique-benchmark/raw/82302ad33bd2f009/Squeeze.pbn, board 1: Missing Deal tag."
+      ]
+    },
+    {
+      "path": ".build/technique-benchmark/raw/868e1d78fea79342/0_ottlik_ch16_all.pbn",
+      "boards": 12,
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "path": ".build/technique-benchmark/raw/868e1d78fea79342/3_ottlik_ch03_all.pbn",
+      "boards": 12,
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "path": ".build/technique-benchmark/raw/868e1d78fea79342/8_ottlik_ch08_all.pbn",
+      "boards": 14,
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "path": ".build/technique-benchmark/raw/868e1d78fea79342/10_ottlik_ch10_all.pbn",
+      "boards": 15,
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "path": ".build/technique-benchmark/raw/a6c18513e0824fc1/2012-03-13_12.pbn",
+      "boards": 1,
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "path": ".build/technique-benchmark/raw/b07014aade6042ad/S2ENGSWE.PBN",
+      "boards": 32,
+      "errorCount": 0,
+      "errors": []
+    },
+    {
+      "path": ".build/technique-benchmark/raw/db9e1b33eaabb245/br3part1.pbn",
+      "boards": 16,
+      "errorCount": 0,
+      "errors": []
+    }
+  ]
+}

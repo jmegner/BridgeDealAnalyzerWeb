@@ -1,0 +1,2407 @@
+[
+  {
+    "url": "https://aces.bridgeblogging.com/2011/01/21/the-aces-on-bridge-friday-january-7th-2011/",
+    "final_url": "https://aces.bridgeblogging.com/2011/01/21/the-aces-on-bridge-friday-january-7th-2011/",
+    "retrieved": "2026-09-26T01:08:26.185989+00:00",
+    "sha256": "c73b3ebd1b89e73dd4c32a6be637371072928b67ae3b55eb0ef47fdcb7aa2284",
+    "bytes": 68130,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/02d73d7a2f467cb6/the-aces-on-bridge-friday-january-7th-2011"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/02d73d7a2f467cb6/the-aces-on-bridge-friday-january-7th-2011"
+  },
+  {
+    "url": "https://www.jmmollimard.fr/facemort/squeeze.zip",
+    "final_url": "https://www.jmmollimard.fr/facemort/squeeze.zip",
+    "retrieved": "2026-09-26T00:43:02.848114+00:00",
+    "sha256": "0355b8c804246cb58946423cb2a21b8289114239d5e95e78692891049c010d7d",
+    "bytes": 10513,
+    "content_type": "application/zip",
+    "files": [
+      {
+        "archive_member": "squeeze_wb.PBN",
+        "path": ".build/technique-benchmark/raw/040fc08ecea90ffc/0_squeeze_wb.PBN"
+      },
+      {
+        "archive_member": "squeezex_bw.pbn",
+        "path": ".build/technique-benchmark/raw/040fc08ecea90ffc/1_squeezex_bw.pbn"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/040fc08ecea90ffc/squeeze.zip"
+  },
+  {
+    "url": "https://rpbridge.net/7b54.htm",
+    "final_url": "https://rpbridge.net/7b54.htm",
+    "retrieved": "2026-09-26T00:57:18.231069+00:00",
+    "sha256": "f35d49745bc85a5a6dfc7e1ddf43ee3e11a698f94e1e2d7d6ab8bb275154d526",
+    "bytes": 4067,
+    "content_type": "text/html",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/06ff5734d9c40d44/7b54.htm"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/06ff5734d9c40d44/7b54.htm"
+  },
+  {
+    "url": "https://www.compassmate.bridge-centre.org/node/737",
+    "final_url": "https://www.compassmate.bridge-centre.org/node/737",
+    "retrieved": "2026-09-26T01:04:36.049535+00:00",
+    "sha256": "8461b1581f575063a92455c84061a49082e3f2edd1715627b8939ae5235a855d",
+    "bytes": 23676,
+    "content_type": "text/html; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/0790cfbb29f54224/737"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/0790cfbb29f54224/737"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31  Hondo717  -  Mentoring 2015/mentoring1507b.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31%20%20Hondo717%20%20-%20%20Mentoring%202015/mentoring1507b.lin",
+    "retrieved": "2026-09-26T00:47:56.977244+00:00",
+    "sha256": "59bca561048cc0ac12c042c047a10a2e251d2245f53a3da2e7065dafe4cd169d",
+    "bytes": 56809,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/0c49e671ab465d76/mentoring1507b.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/0c49e671ab465d76/mentoring1507b.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2019/137__Problems__wk__37.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202019/137__Problems__wk__37.lin",
+    "retrieved": "2026-09-26T00:47:02.645746+00:00",
+    "sha256": "2b6895771bb4d240cdf661e255b49da8af4424ec0f7f4c37a82007b6eb188997",
+    "bytes": 14781,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/0e2f49ef4606c374/137__Problems__wk__37.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/0e2f49ef4606c374/137__Problems__wk__37.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/25  Hondo717  -  Mentoring 2021/mentoring2110a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/25%20%20Hondo717%20%20-%20%20Mentoring%202021/mentoring2110a.lin",
+    "retrieved": "2026-09-26T00:47:44.060182+00:00",
+    "sha256": "c7825ac6fadc48afe6fe8bd854da9796eb3b3d1dd89da1cd4c578c6719ed2a44",
+    "bytes": 23262,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/0f8669af76353623/mentoring2110a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/0f8669af76353623/mentoring2110a.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/23  Lessons  -  Basic Defense Lessons/320   blackwoodleadtrump.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/23%20%20Lessons%20%20-%20%20Basic%20Defense%20Lessons/320%20%20%20blackwoodleadtrump.lin",
+    "retrieved": "2026-09-26T00:46:56.640605+00:00",
+    "sha256": "41495d4158327340b10757ba8cd1336cbe914e76d1aa0114b84145a41607c183",
+    "bytes": 50539,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/0fa67c29c3cd7dd5/320   blackwoodleadtrump.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/0fa67c29c3cd7dd5/320   blackwoodleadtrump.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2018/08/10/the-aces-on-bridge-friday-july-27th-2018/",
+    "final_url": "https://aces.bridgeblogging.com/2018/08/10/the-aces-on-bridge-friday-july-27th-2018/",
+    "retrieved": "2026-09-26T01:08:36.949013+00:00",
+    "sha256": "963d555879d04d48f2f10bc5c0ce7bdb4628b9e4d11518718f54c92885088fa6",
+    "bytes": 73208,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/1010d3332c19c161/the-aces-on-bridge-friday-july-27th-2018"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/1010d3332c19c161/the-aces-on-bridge-friday-july-27th-2018"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ContractBridge/pbn-files/baa1b3df9b54d071c155670a85cbb45727c5916c/2000-3rd_IOC_Grand_Prix/W4EURNOR.PBN",
+    "final_url": "https://raw.githubusercontent.com/ContractBridge/pbn-files/baa1b3df9b54d071c155670a85cbb45727c5916c/2000-3rd_IOC_Grand_Prix/W4EURNOR.PBN",
+    "retrieved": "2026-09-26T00:45:03.138496+00:00",
+    "sha256": "e0d5ece3ae7403ed6d8add408db4e95b06411f8c4815463c85c904144e02ad62",
+    "bytes": 26594,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/11a18fb90d763e5c/W4EURNOR.PBN"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/11a18fb90d763e5c/W4EURNOR.PBN"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/37  Hondo717  -  Mentoring 2009/mentoring091008.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/37%20%20Hondo717%20%20-%20%20Mentoring%202009/mentoring091008.lin",
+    "retrieved": "2026-09-26T00:48:08.006115+00:00",
+    "sha256": "b6160347b4a5d6632acd71bc7fe93800b48251b162b3d786522337d35c766fbb",
+    "bytes": 49630,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/1280dd609d45ff9f/mentoring091008.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/1280dd609d45ff9f/mentoring091008.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2014/09/26/the-aces-on-bridge-thursday-september-12th-2014/",
+    "final_url": "https://aces.bridgeblogging.com/2014/09/26/the-aces-on-bridge-thursday-september-12th-2014/",
+    "retrieved": "2026-09-26T01:08:31.312644+00:00",
+    "sha256": "78a320a6bacd6557de060953f76a8164715793326f59ae2c805d07958bfb5d64",
+    "bytes": 68144,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/19fde568d7aa1079/the-aces-on-bridge-thursday-september-12th-2014"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/19fde568d7aa1079/the-aces-on-bridge-thursday-september-12th-2014"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/150  Endplays 2 - Quiz.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/150%20%20Endplays%202%20-%20Quiz.lin",
+    "retrieved": "2026-09-26T00:47:02.945933+00:00",
+    "sha256": "c6cf3e392dc76477f1702c1af1ebee4e0c7dda764ea74942df25f40756fcf6db",
+    "bytes": 13674,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/1b18e7e6784aa81a/150  Endplays 2 - Quiz.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/1b18e7e6784aa81a/150  Endplays 2 - Quiz.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/BSalita/pbns/30327324935ba90a2d93faa1ab5cfad840c0a4a0/singles/bermuda2000.pbn",
+    "final_url": "https://raw.githubusercontent.com/BSalita/pbns/30327324935ba90a2d93faa1ab5cfad840c0a4a0/singles/bermuda2000.pbn",
+    "retrieved": "2026-09-26T00:45:03.233490+00:00",
+    "sha256": "c5c294ba29a5ec4bf73adc08f6d0c74edcadc7b3908909d58853c0d664f59b13",
+    "bytes": 121488,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/1b478d8c45ea5ca8/bermuda2000.pbn"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/1b478d8c45ea5ca8/bermuda2000.pbn"
+  },
+  {
+    "url": "https://csbnews.org/en/dummy-reversal-2/",
+    "final_url": "https://csbnews.org/en/dummy-reversal-2/",
+    "retrieved": "2026-09-26T01:04:33.926082+00:00",
+    "sha256": "6c05967119aa6494ff739f372d883f87c395d347cd400c173f1ba33f17570c31",
+    "bytes": 460555,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/1bc6cc13276572e8/dummy-reversal-2"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/1bc6cc13276572e8/dummy-reversal-2"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/08  BarnetS  -  Barnet Shenkin/Barnets_-_2__Coaching the Team   2010-04-18.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/08%20%20BarnetS%20%20-%20%20Barnet%20Shenkin/Barnets_-_2__Coaching%20the%20Team%20%20%202010-04-18.lin",
+    "retrieved": "2026-09-26T00:46:39.253256+00:00",
+    "sha256": "739abc372fca73b8a7f59dce93f2a3ed50e0486527589c04a0404e538853cad9",
+    "bytes": 33053,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/1d4884b38866108f/Barnets_-_2__Coaching the Team   2010-04-18.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/1d4884b38866108f/Barnets_-_2__Coaching the Team   2010-04-18.lin"
+  },
+  {
+    "url": "https://rpbridge.net/6f00.htm",
+    "final_url": "https://rpbridge.net/6f00.htm",
+    "retrieved": "2026-09-26T00:57:13.913765+00:00",
+    "sha256": "e1b22ae796f367e28066dd9205bb500b2cc94b025b7827f5b400a4a2343762a1",
+    "bytes": 23083,
+    "content_type": "text/html",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/1e2c5d4038a48639/6f00.htm"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/1e2c5d4038a48639/6f00.htm"
+  },
+  {
+    "url": "https://rpbridge.net/7b03.htm",
+    "final_url": "https://rpbridge.net/7b03.htm",
+    "retrieved": "2026-09-26T00:55:14.252390+00:00",
+    "sha256": "4feffc7d4bb8b1d07dd4c7e26c39a7fd0c3f4d4f975208e0c4648529a52e7f5c",
+    "bytes": 4390,
+    "content_type": "text/html",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/1f3b11fb6dcab22a/7b03.htm"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/1f3b11fb6dcab22a/7b03.htm"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/25  Hondo717  -  Mentoring 2021/mentoring2108a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/25%20%20Hondo717%20%20-%20%20Mentoring%202021/mentoring2108a.lin",
+    "retrieved": "2026-09-26T00:47:43.563074+00:00",
+    "sha256": "5224479f8ec11f0d139ca1c623e4ac2110a797ae2e8727e3dedc359638533ea5",
+    "bytes": 24357,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/1fc44492d2de74ee/mentoring2108a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/1fc44492d2de74ee/mentoring2108a.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/57  Writer    -  Roger's Finds/186_14__Dog_in_the_night.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/57%20%20Writer%20%20%20%20-%20%20Roger%27s%20Finds/186_14__Dog_in_the_night.lin",
+    "retrieved": "2026-09-26T00:47:04.590076+00:00",
+    "sha256": "5b870ae635f438521193c96af188bfeecd933c296475e7d5763edc9221420150",
+    "bytes": 9154,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/200600267a2df0b0/186_14__Dog_in_the_night.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/200600267a2df0b0/186_14__Dog_in_the_night.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2018/11/03/the-aces-on-bridge-saturday-october-20th-2018/",
+    "final_url": "https://aces.bridgeblogging.com/2018/11/03/the-aces-on-bridge-saturday-october-20th-2018/",
+    "retrieved": "2026-09-26T01:08:37.309885+00:00",
+    "sha256": "bcf1ff01fa4a0f8e2da2b33938fee88bd73134a0bf4c8709aecf12a6290f76ec",
+    "bytes": 71251,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/21b8de7124bc16ec/the-aces-on-bridge-saturday-october-20th-2018"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/21b8de7124bc16ec/the-aces-on-bridge-saturday-october-20th-2018"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ContractBridge/pbn-files/baa1b3df9b54d071c155670a85cbb45727c5916c/2001-11th_European_Open_Pairs_Championship/Q2PART1.PBN",
+    "final_url": "https://raw.githubusercontent.com/ContractBridge/pbn-files/baa1b3df9b54d071c155670a85cbb45727c5916c/2001-11th_European_Open_Pairs_Championship/Q2PART1.PBN",
+    "retrieved": "2026-09-26T00:45:03.434382+00:00",
+    "sha256": "d70714e35464f01e8075fcd4f0f4072a45c9fad85c5dc0b965f4de397354e40e",
+    "bytes": 14252,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/21da2d542f6e0922/Q2PART1.PBN"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/21da2d542f6e0922/Q2PART1.PBN"
+  },
+  {
+    "url": "https://michaelslawrence.com/play/bidding-more-to-show-less/",
+    "final_url": "https://michaelslawrence.com/play/bidding-more-to-show-less/",
+    "retrieved": "2026-09-26T01:04:36.001936+00:00",
+    "sha256": "8e186d8b857bc21b7f887787b803e7726fdc2b294a310be2b4cfcfa0f4753116",
+    "bytes": 59485,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/240d7af95d40cc6e/bidding-more-to-show-less"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/240d7af95d40cc6e/bidding-more-to-show-less"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/22  Hondo717  -  Mentoring 2024/mentoring2409a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/22%20%20Hondo717%20%20-%20%20Mentoring%202024/mentoring2409a.lin",
+    "retrieved": "2026-09-26T00:47:38.232372+00:00",
+    "sha256": "4743eb6fd99156c4137de7df3b9b6dd495fee7db9d2f463a2688c5a88fa0e187",
+    "bytes": 21096,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/251779b7f1bff3a3/mentoring2409a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/251779b7f1bff3a3/mentoring2409a.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/37  Listen to the Experts/Think with Fred  2007-12-16.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/37%20%20Listen%20to%20the%20Experts/Think%20with%20Fred%20%202007-12-16.lin",
+    "retrieved": "2026-09-26T00:46:42.232052+00:00",
+    "sha256": "be8df01916f14ce48f8ece63d705e4733e1f612117a7a253e05e6f905a811633",
+    "bytes": 60628,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/27d3660917698103/Think with Fred  2007-12-16.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/27d3660917698103/Think with Fred  2007-12-16.lin"
+  },
+  {
+    "url": "https://csbnews.org/en/recognizing-a-dummy-reversal-by-steve-becker/",
+    "final_url": "https://csbnews.org/en/recognizing-a-dummy-reversal-by-steve-becker/",
+    "retrieved": "2026-09-26T01:04:31.644911+00:00",
+    "sha256": "6b584328a83468b7cef725676e5e9a9c8ef0ce3d67c60d8634047993e0fb1767",
+    "bytes": 446598,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/2a8a5cc4f0e0f2f0/recognizing-a-dummy-reversal-by-steve-becker"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/2a8a5cc4f0e0f2f0/recognizing-a-dummy-reversal-by-steve-becker"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2013/08/06/the-aces-on-bridge-tuesday-july-23rd-2013/",
+    "final_url": "https://aces.bridgeblogging.com/2013/08/06/the-aces-on-bridge-tuesday-july-23rd-2013/",
+    "retrieved": "2026-09-26T01:08:28.817113+00:00",
+    "sha256": "f5f289f02c1b3634f2ebe48f5ff640c18aaf2bef7873a45f7ff0ac4ed5ae2cce",
+    "bytes": 73086,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/2c0f8043f12af0a3/the-aces-on-bridge-tuesday-july-23rd-2013"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/2c0f8043f12af0a3/the-aces-on-bridge-tuesday-july-23rd-2013"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2017/1112__Problem_11.2.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202017/1112__Problem_11.2.lin",
+    "retrieved": "2026-09-26T00:47:01.104372+00:00",
+    "sha256": "f86dee314b63e8b8fdb21b1a2363b5922a46e9eec5a0941492932f4da1c0280d",
+    "bytes": 7277,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/2d25342e73d15dfc/1112__Problem_11.2.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/2d25342e73d15dfc/1112__Problem_11.2.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31  Hondo717  -  Mentoring 2015/mentoring1504a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31%20%20Hondo717%20%20-%20%20Mentoring%202015/mentoring1504a.lin",
+    "retrieved": "2026-09-26T00:47:56.391126+00:00",
+    "sha256": "711fdcb3844aa1fe97ae495314aee321dc4af9083b39451ff7b3f3cd5c9f7f9f",
+    "bytes": 43989,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/2d8d183c73fb3caa/mentoring1504a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/2d8d183c73fb3caa/mentoring1504a.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2018/06/27/the-aces-on-bridge-wednesday-june-13th-2018/",
+    "final_url": "https://aces.bridgeblogging.com/2018/06/27/the-aces-on-bridge-wednesday-june-13th-2018/",
+    "retrieved": "2026-09-26T01:08:36.595933+00:00",
+    "sha256": "21a79542599681045a3f72569a8ad551d419db45f1737f8f6ffb57bba17fcef8",
+    "bytes": 74404,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/2e199b559443bbad/the-aces-on-bridge-wednesday-june-13th-2018"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/2e199b559443bbad/the-aces-on-bridge-wednesday-june-13th-2018"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2016/02/06/the-aces-on-bridge-saturday-january-23rd-2016/",
+    "final_url": "https://aces.bridgeblogging.com/2016/02/06/the-aces-on-bridge-saturday-january-23rd-2016/",
+    "retrieved": "2026-09-26T01:08:33.593195+00:00",
+    "sha256": "843bf6da5a3eec6efc924b25fb7d6d4f18fd35280701d3e57b72dff3ebcf2493",
+    "bytes": 65291,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/2fcec6b95bfa8dd0/the-aces-on-bridge-saturday-january-23rd-2016"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/2fcec6b95bfa8dd0/the-aces-on-bridge-saturday-january-23rd-2016"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/62  Thurston  -  Paul Thurston/Thurston - 2over1   2014.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/62%20%20Thurston%20%20-%20%20Paul%20Thurston/Thurston%20-%202over1%20%20%202014.lin",
+    "retrieved": "2026-09-26T00:46:44.124895+00:00",
+    "sha256": "655e67624b2754b23a443589fa4b0d2e59a8e71d6f2501652c84518083879969",
+    "bytes": 85042,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/3200572c821e8f9d/Thurston - 2over1   2014.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/3200572c821e8f9d/Thurston - 2over1   2014.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/35  Hondo717  -  Mentoring 2011/mentoring1106e.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/35%20%20Hondo717%20%20-%20%20Mentoring%202011/mentoring1106e.lin",
+    "retrieved": "2026-09-26T00:48:04.676955+00:00",
+    "sha256": "0a30274c5bd21987944a2ee928f09b781ea05693094e610eda7bca0f35d0ab69",
+    "bytes": 28914,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/32203a9805488b9a/mentoring1106e.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/32203a9805488b9a/mentoring1106e.lin"
+  },
+  {
+    "url": "https://www.jmmollimard.fr/facemort/romanet.zip",
+    "final_url": "https://www.jmmollimard.fr/facemort/romanet.zip",
+    "retrieved": "2026-09-26T00:42:22.943341+00:00",
+    "sha256": "ea08b01248d457081f611461b696dae4643d0fc5da7357de9a7049a4376e61dc",
+    "bytes": 2393,
+    "content_type": "application/zip",
+    "files": [
+      {
+        "archive_member": "romanet.PBN",
+        "path": ".build/technique-benchmark/raw/343ed476a5fb249c/0_romanet.PBN"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/343ed476a5fb249c/romanet.zip"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2017/1113__Problem_11.3.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202017/1113__Problem_11.3.lin",
+    "retrieved": "2026-09-26T00:47:01.110260+00:00",
+    "sha256": "d063e0363a92385040cabcc6da8b344f3326b6e7a51872a559372636373eea00",
+    "bytes": 9786,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/35ee99d3cc4ea706/1113__Problem_11.3.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/35ee99d3cc4ea706/1113__Problem_11.3.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/72  Learn to Play Bridge 2/207_7____Trump_Management.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/72%20%20Learn%20to%20Play%20Bridge%202/207_7____Trump_Management.lin",
+    "retrieved": "2026-09-26T00:48:12.541218+00:00",
+    "sha256": "d79a4c72954359cb8de8636f290cf8132ba3bc88f58e37d45b3df999ee131247",
+    "bytes": 56956,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/39f11e45d9d3609c/207_7____Trump_Management.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/39f11e45d9d3609c/207_7____Trump_Management.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/240  Endplays 7 - The Coup en Passant.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/240%20%20Endplays%207%20-%20The%20Coup%20en%20Passant.lin",
+    "retrieved": "2026-09-26T00:47:03.316778+00:00",
+    "sha256": "4e4a8e0c8f10a041ff2d67209e0c170c579ad02bdfc118c3b512f8c7c243dd09",
+    "bytes": 22584,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/3b754f82ae819a03/240  Endplays 7 - The Coup en Passant.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/3b754f82ae819a03/240  Endplays 7 - The Coup en Passant.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2017/09/12/the-aces-on-bridge-tuesday-august-29th-2017/",
+    "final_url": "https://aces.bridgeblogging.com/2017/09/12/the-aces-on-bridge-tuesday-august-29th-2017/",
+    "retrieved": "2026-09-26T01:08:35.597654+00:00",
+    "sha256": "f2693d978e26d747e133378a2edc6196af70fb384840027f258649281878aa46",
+    "bytes": 65622,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/3b8891c35c50df4b/the-aces-on-bridge-tuesday-august-29th-2017"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/3b8891c35c50df4b/the-aces-on-bridge-tuesday-august-29th-2017"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2015/04/14/the-aces-on-bridge-tuesday-march-31st-2015/",
+    "final_url": "https://aces.bridgeblogging.com/2015/04/14/the-aces-on-bridge-tuesday-march-31st-2015/",
+    "retrieved": "2026-09-26T01:08:32.326861+00:00",
+    "sha256": "8e44ef4cd4f638e4de91f6fec87d4b778a1c9334c7d8f0c90a95588414ec4eb4",
+    "bytes": 71304,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/40db1fe3709fa7a2/the-aces-on-bridge-tuesday-march-31st-2015"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/40db1fe3709fa7a2/the-aces-on-bridge-tuesday-march-31st-2015"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2019/139__Problems__wk__39.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202019/139__Problems__wk__39.lin",
+    "retrieved": "2026-09-26T00:47:02.690903+00:00",
+    "sha256": "ccf2c751857f7b6f2048b89addb30ae83e4c99682d142ea721068febbf320023",
+    "bytes": 15403,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/440d3be9dc55df74/139__Problems__wk__39.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/440d3be9dc55df74/139__Problems__wk__39.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/29  Hondo717  -  Mentoring 2017/mentoring1710b.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/29%20%20Hondo717%20%20-%20%20Mentoring%202017/mentoring1710b.lin",
+    "retrieved": "2026-09-26T00:47:53.029157+00:00",
+    "sha256": "ebdf4489d320ef6b106ddd1b280b476af033cd6b6005872ec3c1a60adb6389b7",
+    "bytes": 26464,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/446967579dc9099a/mentoring1710b.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/446967579dc9099a/mentoring1710b.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2019/136__Problems__wk__36.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202019/136__Problems__wk__36.lin",
+    "retrieved": "2026-09-26T00:47:02.649316+00:00",
+    "sha256": "67e59e4343a722324e297b697f1373e4c3412b27367b5156ac869c0032e18b3d",
+    "bytes": 17797,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/453058e2c80b6982/136__Problems__wk__36.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/453058e2c80b6982/136__Problems__wk__36.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2018/133__Problems__wk__33.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202018/133__Problems__wk__33.lin",
+    "retrieved": "2026-09-26T00:47:02.485116+00:00",
+    "sha256": "af22953416ed896914f49cd48eb71066394d7d992896e5689b23dc62ed3f2550",
+    "bytes": 15781,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/4575b756431dfdc2/133__Problems__wk__33.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/4575b756431dfdc2/133__Problems__wk__33.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-S/22  Survival  -  Counting/110  Counting with Agumperz.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-S/22%20%20Survival%20%20-%20%20Counting/110%20%20Counting%20with%20Agumperz.lin",
+    "retrieved": "2026-09-26T00:47:29.727114+00:00",
+    "sha256": "d1a327daaab0a45d4b53e1f85645c17312ee13db8e81e6a594332d274f6c2b32",
+    "bytes": 103449,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/46e30ff68ec397c4/110  Counting with Agumperz.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/46e30ff68ec397c4/110  Counting with Agumperz.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2017/1085__Problem__8.5.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202017/1085__Problem__8.5.lin",
+    "retrieved": "2026-09-26T00:47:00.484110+00:00",
+    "sha256": "8401150da28e871b5316c7634541c9d93a391820eb7a9cb1f7cceb6d95328151",
+    "bytes": 9057,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/493005fe72c3458c/1085__Problem__8.5.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/493005fe72c3458c/1085__Problem__8.5.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/23  Lessons  -  Basic Defense Lessons/360   defenseexamples04.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/23%20%20Lessons%20%20-%20%20Basic%20Defense%20Lessons/360%20%20%20defenseexamples04.lin",
+    "retrieved": "2026-09-26T00:46:56.989577+00:00",
+    "sha256": "5604465b3f51c752e3920ddf5df9b5fb3a917fcd9c3da9d28256cd1c54eace38",
+    "bytes": 40010,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/49b8913bfd1c3cbc/360   defenseexamples04.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/49b8913bfd1c3cbc/360   defenseexamples04.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/130  Endplays 1 - Quiz.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/130%20%20Endplays%201%20-%20Quiz.lin",
+    "retrieved": "2026-09-26T00:47:02.876548+00:00",
+    "sha256": "9c4bc42270c5ea188c1ae2591b1e6f0d2f14cf759544185fa23eca929b5c90e0",
+    "bytes": 9651,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/4a9a929c5f8f3976/130  Endplays 1 - Quiz.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/4a9a929c5f8f3976/130  Endplays 1 - Quiz.lin"
+  },
+  {
+    "url": "https://rpbridge.net/7b70.htm",
+    "final_url": "https://rpbridge.net/7b70.htm",
+    "retrieved": "2026-09-26T00:57:19.048505+00:00",
+    "sha256": "93a69d769503da9ab0c637679a1f30704ec12ac06ab168ca1ba8524b519bb4bf",
+    "bytes": 4314,
+    "content_type": "text/html",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/4b0df241b249e785/7b70.htm"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/4b0df241b249e785/7b70.htm"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/81  Watson/038  Watson 2 - 3.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/81%20%20Watson/038%20%20Watson%202%20-%203.lin",
+    "retrieved": "2026-09-26T00:48:15.495125+00:00",
+    "sha256": "07e788e2ae666019515a28fe7aeb78819df2623e50112bf5e748a33ddd36e75a",
+    "bytes": 61234,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/5115ce9dad7f114d/038  Watson 2 - 3.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/5115ce9dad7f114d/038  Watson 2 - 3.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/25  Hondo717  -  Mentoring 2021/mentoring2101d.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/25%20%20Hondo717%20%20-%20%20Mentoring%202021/mentoring2101d.lin",
+    "retrieved": "2026-09-26T00:47:42.624895+00:00",
+    "sha256": "03e325cb99bd49897ebec79fd0e973c6a51530cd2d8c2b51a67e0374bb7bb257",
+    "bytes": 30384,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/56b121384980e7d0/mentoring2101d.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/56b121384980e7d0/mentoring2101d.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2012/01/20/the-aces-on-bridge-friday-january-6th-2012/",
+    "final_url": "https://aces.bridgeblogging.com/2012/01/20/the-aces-on-bridge-friday-january-6th-2012/",
+    "retrieved": "2026-09-26T01:08:27.021765+00:00",
+    "sha256": "573b1e7004d693d2c123bb611211a569538b5acaaa570fb50c183451c8ee54d3",
+    "bytes": 74933,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/56d576d2e3cc0137/the-aces-on-bridge-friday-january-6th-2012"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/56d576d2e3cc0137/the-aces-on-bridge-friday-january-6th-2012"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2013/08/09/the-aces-on-bridge-friday-july-26th-2013/",
+    "final_url": "https://aces.bridgeblogging.com/2013/08/09/the-aces-on-bridge-friday-july-26th-2013/",
+    "retrieved": "2026-09-26T01:08:28.937269+00:00",
+    "sha256": "33e475408b0d2abbccccf74ae2b617d0436a5f9d211a9ba722f22f51d3256584",
+    "bytes": 77528,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/57517e297d690402/the-aces-on-bridge-friday-july-26th-2013"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/57517e297d690402/the-aces-on-bridge-friday-july-26th-2013"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ContractBridge/pbn-files/baa1b3df9b54d071c155670a85cbb45727c5916c/2000-3rd_IOC_Grand_Prix/3BUSAITA.PBN",
+    "final_url": "https://raw.githubusercontent.com/ContractBridge/pbn-files/baa1b3df9b54d071c155670a85cbb45727c5916c/2000-3rd_IOC_Grand_Prix/3BUSAITA.PBN",
+    "retrieved": "2026-09-26T01:02:17.389851+00:00",
+    "sha256": "14a3bba32a1eb2e82c4540e35abcd5cf7afc4b799b0681487f5f0e3fb21895db",
+    "bytes": 23438,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/5aa732fa042e4c9c/3BUSAITA.PBN"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/5aa732fa042e4c9c/3BUSAITA.PBN"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/36  Hondo717  -  Mentoring 2010/mentoring100520.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/36%20%20Hondo717%20%20-%20%20Mentoring%202010/mentoring100520.lin",
+    "retrieved": "2026-09-26T00:48:05.680489+00:00",
+    "sha256": "b15e1a8cabb1db7cc53c9109c2a7baa7512bead4c0fe8efcfa79cdceaa9c85f9",
+    "bytes": 48498,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/5b2ac197e6397daa/mentoring100520.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/5b2ac197e6397daa/mentoring100520.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2016/01/16/the-aces-on-bridge-saturday-january-2nd-2016/",
+    "final_url": "https://aces.bridgeblogging.com/2016/01/16/the-aces-on-bridge-saturday-january-2nd-2016/",
+    "retrieved": "2026-09-26T01:08:33.485101+00:00",
+    "sha256": "e17c495ffff08ae03780030656b442bdb14f835d6f79bb865fac3cb566f845ef",
+    "bytes": 69995,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/5bd2dd776b515297/the-aces-on-bridge-saturday-january-2nd-2016"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/5bd2dd776b515297/the-aces-on-bridge-saturday-january-2nd-2016"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/180  Endplays 4 - The Entry Position.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/180%20%20Endplays%204%20-%20The%20Entry%20Position.lin",
+    "retrieved": "2026-09-26T00:47:03.097744+00:00",
+    "sha256": "8cb8ed137e0f58a6883b360e70fc6fad33833c52eac7cbeb98ee3a2de1f54419",
+    "bytes": 24191,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/5c7ee762b556d0c1/180  Endplays 4 - The Entry Position.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/5c7ee762b556d0c1/180  Endplays 4 - The Entry Position.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/23  Lessons  -  Basic Defense Lessons/350   defenseexamples02.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/23%20%20Lessons%20%20-%20%20Basic%20Defense%20Lessons/350%20%20%20defenseexamples02.lin",
+    "retrieved": "2026-09-26T00:46:56.897243+00:00",
+    "sha256": "7f90fc485972e71a65ab4000ca3035e1898bc9619efb60491bf2b427a491a0d9",
+    "bytes": 39815,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/5e24fd5d8533ff50/350   defenseexamples02.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/5e24fd5d8533ff50/350   defenseexamples02.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/140  Endplays 2 - Exiting with a Trump.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/140%20%20Endplays%202%20-%20Exiting%20with%20a%20Trump.lin",
+    "retrieved": "2026-09-26T00:47:02.917741+00:00",
+    "sha256": "204e656014a35a136f6988e41955c657d8448f6667a47cdb099aab16f7969063",
+    "bytes": 23629,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/5e79d5ffaebe302c/140  Endplays 2 - Exiting with a Trump.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/5e79d5ffaebe302c/140  Endplays 2 - Exiting with a Trump.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2017/01/27/the-aces-on-bridge-friday-january-13th-2017/",
+    "final_url": "https://aces.bridgeblogging.com/2017/01/27/the-aces-on-bridge-friday-january-13th-2017/",
+    "retrieved": "2026-09-26T01:08:34.776462+00:00",
+    "sha256": "5114d09eb8c0bd64c171b15c9bf01bdf01be5fbd1723dff3222613c676c41706",
+    "bytes": 84818,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/5fa25d6b793c22ce/the-aces-on-bridge-friday-january-13th-2017"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/5fa25d6b793c22ce/the-aces-on-bridge-friday-january-13th-2017"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2017/1075__Problem__7.5.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202017/1075__Problem__7.5.lin",
+    "retrieved": "2026-09-26T00:47:00.313651+00:00",
+    "sha256": "b1ab331823b9750972fa2590d9daca9c89ffa3c7261987edd1f43bd87f4ae5ef",
+    "bytes": 7255,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/5fff66457b9698c8/1075__Problem__7.5.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/5fff66457b9698c8/1075__Problem__7.5.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31  Hondo717  -  Mentoring 2015/mentoring1505a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31%20%20Hondo717%20%20-%20%20Mentoring%202015/mentoring1505a.lin",
+    "retrieved": "2026-09-26T00:47:56.646417+00:00",
+    "sha256": "74b5dc3de20d915a8a93124c83d3a8015e520e750e6dae83cc67b516c434663c",
+    "bytes": 43411,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/622178a8c2e11392/mentoring1505a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/622178a8c2e11392/mentoring1505a.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2018/123__Problems__wk__23.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202018/123__Problems__wk__23.lin",
+    "retrieved": "2026-09-26T00:47:02.106981+00:00",
+    "sha256": "3b30d490720149c990f50265ad6adaa79cdea8a8dcec1c520b1fe7968d73585e",
+    "bytes": 12007,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/622414467360dc23/123__Problems__wk__23.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/622414467360dc23/123__Problems__wk__23.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/30  Hondo717  -  Mentoring 2016/mentoring1605b.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/30%20%20Hondo717%20%20-%20%20Mentoring%202016/mentoring1605b.lin",
+    "retrieved": "2026-09-26T00:47:54.372943+00:00",
+    "sha256": "3b21c18579148db4064819e50f00aea19ccc9a997b4c3815f149812011ebec62",
+    "bytes": 30889,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/62992d17b2993ce0/mentoring1605b.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/62992d17b2993ce0/mentoring1605b.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/39  lrargerich  -  Luis Argerich/Play and Discuss  2013-09-12.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/39%20%20lrargerich%20%20-%20%20Luis%20Argerich/Play%20and%20Discuss%20%202013-09-12.lin",
+    "retrieved": "2026-09-26T00:46:42.423896+00:00",
+    "sha256": "6d05cfa6353c7517ccd06bd1785c040b57d57a2dbd94b29d9388b8b9c620df10",
+    "bytes": 21172,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/62b8337ac97747d8/Play and Discuss  2013-09-12.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/62b8337ac97747d8/Play and Discuss  2013-09-12.lin"
+  },
+  {
+    "url": "https://rpbridge.net/4d00.htm",
+    "final_url": "https://rpbridge.net/4d00.htm",
+    "retrieved": "2026-09-26T00:57:00.102116+00:00",
+    "sha256": "cd892a5e5444bc38262127ee67075cf1f3793f1797a99d200bf837afb26a32d7",
+    "bytes": 20852,
+    "content_type": "text/html",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/636cc705ab4b4d97/4d00.htm"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/636cc705ab4b4d97/4d00.htm"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2018/117__Problems__wk__17.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202018/117__Problems__wk__17.lin",
+    "retrieved": "2026-09-26T00:47:01.890062+00:00",
+    "sha256": "e92efac2163b81ab65d5094bf68d7b1f89ecb896082a84c0c07ecb4845a7219c",
+    "bytes": 11221,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/651beb8cd4874707/117__Problems__wk__17.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/651beb8cd4874707/117__Problems__wk__17.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31  Hondo717  -  Mentoring 2015/mentoring1502b.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31%20%20Hondo717%20%20-%20%20Mentoring%202015/mentoring1502b.lin",
+    "retrieved": "2026-09-26T00:47:55.921375+00:00",
+    "sha256": "4e8b2763d5f2e4e78d9213fe33471489aecd6a4fb8ea5935d87ed7008ae4449b",
+    "bytes": 42612,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/66f5d064aa630ad5/mentoring1502b.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/66f5d064aa630ad5/mentoring1502b.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2010/04/09/the-aces-on-bridge-friday-march-26-2010/",
+    "final_url": "https://aces.bridgeblogging.com/2010/04/09/the-aces-on-bridge-friday-march-26-2010/",
+    "retrieved": "2026-09-26T01:07:42.101716+00:00",
+    "sha256": "0e6b113e1256f6125f17371044094b8ad018676d31180405dc3aee82190207e2",
+    "bytes": 68558,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/671ae7dfea442fc7/the-aces-on-bridge-friday-march-26-2010"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/671ae7dfea442fc7/the-aces-on-bridge-friday-march-26-2010"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2017/03/30/the-aces-on-bridge-thursday-march-16th-2017/",
+    "final_url": "https://aces.bridgeblogging.com/2017/03/30/the-aces-on-bridge-thursday-march-16th-2017/",
+    "retrieved": "2026-09-26T01:08:35.055467+00:00",
+    "sha256": "505b9be7190b907cf9e61232369ffd63d65b5b151b773bf842cf8beac609e63a",
+    "bytes": 65721,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/6955383dce5539a0/the-aces-on-bridge-thursday-march-16th-2017"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/6955383dce5539a0/the-aces-on-bridge-thursday-march-16th-2017"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2012/01/31/the-aces-on-bridge-tuesday-january-17th-2012/",
+    "final_url": "https://aces.bridgeblogging.com/2012/01/31/the-aces-on-bridge-tuesday-january-17th-2012/",
+    "retrieved": "2026-09-26T01:08:27.056079+00:00",
+    "sha256": "4caf2b555233aa7e8bf9762e43d9c40ddc7786110396ca91fb66b5790480faaf",
+    "bytes": 74103,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/6a6661b864a8d6d6/the-aces-on-bridge-tuesday-january-17th-2012"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/6a6661b864a8d6d6/the-aces-on-bridge-tuesday-january-17th-2012"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/230  Endplays 6 - Quiz.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/230%20%20Endplays%206%20-%20Quiz.lin",
+    "retrieved": "2026-09-26T00:47:03.244629+00:00",
+    "sha256": "e81da1a61d8eae39e92f9ea660235e33a1a0528efe910f93ae12828288d919d9",
+    "bytes": 6500,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/6b2d9a61210c5218/230  Endplays 6 - Quiz.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/6b2d9a61210c5218/230  Endplays 6 - Quiz.lin"
+  },
+  {
+    "url": "https://csbnews.org/en/dummy-reversal-does-it-by-o-jacoby/",
+    "final_url": "https://csbnews.org/en/dummy-reversal-does-it-by-o-jacoby/",
+    "retrieved": "2026-09-26T01:04:33.784065+00:00",
+    "sha256": "2ede95759bc6313385b7a0b50d88542848bf0435184e4f1c4c7ae00a26e5d5c1",
+    "bytes": 446540,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/6db60b05fcb8daff/dummy-reversal-does-it-by-o-jacoby"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/6db60b05fcb8daff/dummy-reversal-does-it-by-o-jacoby"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31  Hondo717  -  Mentoring 2015/mentoring1502c.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31%20%20Hondo717%20%20-%20%20Mentoring%202015/mentoring1502c.lin",
+    "retrieved": "2026-09-26T00:47:55.987299+00:00",
+    "sha256": "4572f914c8bb4c5b055cb371cc176b89821a7c05f59b8fd6e55542b0c62d22a0",
+    "bytes": 33860,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/6dc7bc0783d1e1c1/mentoring1502c.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/6dc7bc0783d1e1c1/mentoring1502c.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/57  Writer    -  Roger's Finds/198_2___Impossible_5C.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/57%20%20Writer%20%20%20%20-%20%20Roger%27s%20Finds/198_2___Impossible_5C.lin",
+    "retrieved": "2026-09-26T00:47:05.105055+00:00",
+    "sha256": "3cf4597f3eb3812cb2b696f1370c814bffcd7d76827c114a1d07bc615f3420ef",
+    "bytes": 7895,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/6eef14c74f6f83fc/198_2___Impossible_5C.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/6eef14c74f6f83fc/198_2___Impossible_5C.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2018/119__Problems__wk__19.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202018/119__Problems__wk__19.lin",
+    "retrieved": "2026-09-26T00:47:01.931855+00:00",
+    "sha256": "a225bdcefbe70c76bad97973f3c0f93687d700e00bd68248ef1a651abebd3296",
+    "bytes": 11331,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/7274ac125d553cd3/119__Problems__wk__19.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/7274ac125d553cd3/119__Problems__wk__19.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/38  Hondo717  -  Mentoring 2008/mentoring080605.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/38%20%20Hondo717%20%20-%20%20Mentoring%202008/mentoring080605.lin",
+    "retrieved": "2026-09-26T00:48:09.275402+00:00",
+    "sha256": "dcad85a3ffeec43bac69c1dd254c86d7469be361bf49054407cf141d00579838",
+    "bytes": 26511,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/72b7b3d345629a76/mentoring080605.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/72b7b3d345629a76/mentoring080605.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/220  Endplays 6 - The Trump Coup.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/220%20%20Endplays%206%20-%20The%20Trump%20Coup.lin",
+    "retrieved": "2026-09-26T00:47:03.271519+00:00",
+    "sha256": "fbadfccbc353e0c703e8baf316ee0cc8106924529bd827d7c36467ae89eea8f4",
+    "bytes": 27982,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/75fdac5ed532d012/220  Endplays 6 - The Trump Coup.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/75fdac5ed532d012/220  Endplays 6 - The Trump Coup.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/33  Hondo717  -  Mentoring 2013/mentoring1303b.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/33%20%20Hondo717%20%20-%20%20Mentoring%202013/mentoring1303b.lin",
+    "retrieved": "2026-09-26T00:48:00.552549+00:00",
+    "sha256": "9f498afc363702b89593d8e122e1532ceaf283fb7cf9b7fa4884e93944ebc9e7",
+    "bytes": 24083,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/78eb2454ef9d17af/mentoring1303b.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/78eb2454ef9d17af/mentoring1303b.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/160  Endplays 3 - Exiting the Problem Suit.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/160%20%20Endplays%203%20-%20Exiting%20the%20Problem%20Suit.lin",
+    "retrieved": "2026-09-26T00:47:02.932370+00:00",
+    "sha256": "35993f1c501c96fb51228bc6c3a1350de260f71a4667aa5a50b73d1202790211",
+    "bytes": 11722,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/790fd3237eebf76d/160  Endplays 3 - Exiting the Problem Suit.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/790fd3237eebf76d/160  Endplays 3 - Exiting the Problem Suit.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2018/115__Squeezes__B.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202018/115__Squeezes__B.lin",
+    "retrieved": "2026-09-26T00:47:01.779817+00:00",
+    "sha256": "79d1656893a11aa70f7816043718533be986364e8293124639f67d81fad3274e",
+    "bytes": 11868,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/7952df64de6c195e/115__Squeezes__B.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/7952df64de6c195e/115__Squeezes__B.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-S/69  Techniques  -  9. Trump Coup/901  1.  Trump Coup Intro.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-S/69%20%20Techniques%20%20-%20%209.%20Trump%20Coup/901%20%201.%20%20Trump%20Coup%20Intro.lin",
+    "retrieved": "2026-09-26T00:47:36.609366+00:00",
+    "sha256": "253227266e67c0f94d81220cf19e6c0fc04bacf8be69de46ccd59efa28a2a4a3",
+    "bytes": 6164,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/798b3c3351aed361/901  1.  Trump Coup Intro.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/798b3c3351aed361/901  1.  Trump Coup Intro.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2017/1105__Problem_10.5.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202017/1105__Problem_10.5.lin",
+    "retrieved": "2026-09-26T00:47:00.995829+00:00",
+    "sha256": "1f0726bdd1b86e1274c3c8a69c4d5359fba78122b8165d75fc5efb3d35007cf2",
+    "bytes": 9189,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/7acdf8c17af8e4d8/1105__Problem_10.5.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/7acdf8c17af8e4d8/1105__Problem_10.5.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/37  Hondo717  -  Mentoring 2009/mentoring090820.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/37%20%20Hondo717%20%20-%20%20Mentoring%202009/mentoring090820.lin",
+    "retrieved": "2026-09-26T00:48:07.723000+00:00",
+    "sha256": "020ba9632bb500f1d19dc4fabbec804458db336231d46c1c2d7480881b811bc9",
+    "bytes": 35326,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/7bb3021ff8ec089f/mentoring090820.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/7bb3021ff8ec089f/mentoring090820.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/23  Hondo717  -  Mentoring 2023/mentoring2304b.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/23%20%20Hondo717%20%20-%20%20Mentoring%202023/mentoring2304b.lin",
+    "retrieved": "2026-09-26T00:47:39.273662+00:00",
+    "sha256": "349696b43952b5630ba99da458179d6c9aa3d8a73c928828cfbba6d9ba380573",
+    "bytes": 15713,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/7d1b97b4a3adbd4c/mentoring2304b.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/7d1b97b4a3adbd4c/mentoring2304b.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31  Hondo717  -  Mentoring 2015/mentoring1502a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31%20%20Hondo717%20%20-%20%20Mentoring%202015/mentoring1502a.lin",
+    "retrieved": "2026-09-26T00:47:55.961148+00:00",
+    "sha256": "3b6ed3d8e2a8f3ed9f6d2edaa97abada921e1e507bc25162e616dc049a29dd49",
+    "bytes": 51120,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/7ee3c1c8ac6f5847/mentoring1502a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/7ee3c1c8ac6f5847/mentoring1502a.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2012/12/27/the-aces-on-bridge-thursday-december-13th-2012/",
+    "final_url": "https://aces.bridgeblogging.com/2012/12/27/the-aces-on-bridge-thursday-december-13th-2012/",
+    "retrieved": "2026-09-26T01:08:28.057625+00:00",
+    "sha256": "5b5eea3e2745744bfcb96d7c154c7b78e6d5fb3e2f859d4ee3a92f1b266c49d2",
+    "bytes": 79682,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/7fc9bfe6e59fd039/the-aces-on-bridge-thursday-december-13th-2012"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/7fc9bfe6e59fd039/the-aces-on-bridge-thursday-december-13th-2012"
+  },
+  {
+    "url": "https://csbnews.org/en/lessons-on-dummy-reversal-play/",
+    "final_url": "https://csbnews.org/en/lessons-on-dummy-reversal-play/",
+    "retrieved": "2026-09-26T01:04:34.111949+00:00",
+    "sha256": "f4cc028807c7240cdc89ccc0f6c0c2e541ab605b0407ca5a721d9b93a134c72c",
+    "bytes": 457755,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/7fd9964ecd5e07ca/lessons-on-dummy-reversal-play"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/7fd9964ecd5e07ca/lessons-on-dummy-reversal-play"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31  Hondo717  -  Mentoring 2015/mentoring1509d.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31%20%20Hondo717%20%20-%20%20Mentoring%202015/mentoring1509d.lin",
+    "retrieved": "2026-09-26T00:47:57.440695+00:00",
+    "sha256": "985a3133e68076b677989c8392778cdc68d86e79d09b4d2d91818c6585f67c70",
+    "bytes": 23522,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/812172c517670f96/mentoring1509d.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/812172c517670f96/mentoring1509d.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/bridge-craftwork/Bridge-Classroom/0d0fd025141a41a5c23ac63ebf6c1104d90f3715/public/data/Squeeze.pbn",
+    "final_url": "https://raw.githubusercontent.com/bridge-craftwork/Bridge-Classroom/0d0fd025141a41a5c23ac63ebf6c1104d90f3715/public/data/Squeeze.pbn",
+    "retrieved": "2026-09-26T00:45:01.660869+00:00",
+    "sha256": "2ae50e148e8c9425840d4192de103265fd133bf93a872af35e4a1164eccc5e25",
+    "bytes": 24680,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/82302ad33bd2f009/Squeeze.pbn"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/82302ad33bd2f009/Squeeze.pbn"
+  },
+  {
+    "url": "https://www.sackab.fi/data/deep_finesse_files/Geza_ottlik_PBN.zip",
+    "final_url": "https://www.sackab.fi/data/deep_finesse_files/Geza_ottlik_PBN.zip",
+    "retrieved": "2026-09-26T00:42:24.203786+00:00",
+    "sha256": "73709f2fcd444b2e63bf9835f894ab3ea17133d6428a7454fa40c908fd9b209d",
+    "bytes": 20656,
+    "content_type": "application/zip",
+    "files": [
+      {
+        "archive_member": "ottlik_ch16_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/0_ottlik_ch16_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch01_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/1_ottlik_ch01_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch02_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/2_ottlik_ch02_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch03_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/3_ottlik_ch03_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch04_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/4_ottlik_ch04_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch05_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/5_ottlik_ch05_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch06_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/6_ottlik_ch06_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch07_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/7_ottlik_ch07_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch08_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/8_ottlik_ch08_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch09_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/9_ottlik_ch09_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch10_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/10_ottlik_ch10_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch11_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/11_ottlik_ch11_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch12_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/12_ottlik_ch12_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch13_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/13_ottlik_ch13_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch14_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/14_ottlik_ch14_all.pbn"
+      },
+      {
+        "archive_member": "ottlik_ch15_all.pbn",
+        "path": ".build/technique-benchmark/raw/868e1d78fea79342/15_ottlik_ch15_all.pbn"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/868e1d78fea79342/Geza_ottlik_PBN.zip"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/190  Endplays 4 - Quiz.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/190%20%20Endplays%204%20-%20Quiz.lin",
+    "retrieved": "2026-09-26T00:47:03.078823+00:00",
+    "sha256": "6c04a83ddf37ec0ab27a93545b7ac6846734116e36d7182d33dc589a32b45908",
+    "bytes": 9509,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/88d82b5dc038df0f/190  Endplays 4 - Quiz.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/88d82b5dc038df0f/190  Endplays 4 - Quiz.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2014/07/31/the-aces-on-bridge-thursday-july-17th-2014/",
+    "final_url": "https://aces.bridgeblogging.com/2014/07/31/the-aces-on-bridge-thursday-july-17th-2014/",
+    "retrieved": "2026-09-26T01:08:30.749999+00:00",
+    "sha256": "cfba3dc068cbd6377e982ffa3120abbb3a83c46b761518062ae3fb0a78d40861",
+    "bytes": 65248,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/88e5262af62d2e02/the-aces-on-bridge-thursday-july-17th-2014"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/88e5262af62d2e02/the-aces-on-bridge-thursday-july-17th-2014"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/22  Hondo717  -  Mentoring 2024/mentoring2411a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/22%20%20Hondo717%20%20-%20%20Mentoring%202024/mentoring2411a.lin",
+    "retrieved": "2026-09-26T00:47:38.509252+00:00",
+    "sha256": "ae3f5706a3b31d9c50c1fe6dd0f9a9669d24ccd409afd9a821f388ad62be2613",
+    "bytes": 21140,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/8976e77d880d4926/mentoring2411a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/8976e77d880d4926/mentoring2411a.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2012/11/10/the-aces-on-bridge-saturday-october-27th-2012/",
+    "final_url": "https://aces.bridgeblogging.com/2012/11/10/the-aces-on-bridge-saturday-october-27th-2012/",
+    "retrieved": "2026-09-26T01:08:27.912715+00:00",
+    "sha256": "f24d4c3af705e9c59222886c8e942d3e9062d7cfc98faa7c1d461fb4b753329e",
+    "bytes": 77132,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/8e3fa6381c20b462/the-aces-on-bridge-saturday-october-27th-2012"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/8e3fa6381c20b462/the-aces-on-bridge-saturday-october-27th-2012"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2013/03/15/the-aces-on-bridge-friday-march-1st-2013/",
+    "final_url": "https://aces.bridgeblogging.com/2013/03/15/the-aces-on-bridge-friday-march-1st-2013/",
+    "retrieved": "2026-09-26T01:08:28.477067+00:00",
+    "sha256": "7253121271d9173826dce2a847b733d8c9b3aa679aeb14b1bfcbbff5c8413052",
+    "bytes": 72650,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/8e7ce93714a97f47/the-aces-on-bridge-friday-march-1st-2013"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/8e7ce93714a97f47/the-aces-on-bridge-friday-march-1st-2013"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/58  Writer    -  Roger on Squeezes/108_Q_a__Angel_Blue_Problems_A.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/58%20%20Writer%20%20%20%20-%20%20Roger%20on%20Squeezes/108_Q_a__Angel_Blue_Problems_A.lin",
+    "retrieved": "2026-09-26T00:47:05.606074+00:00",
+    "sha256": "8eb275de4b415b84e7f1925ba327857aa2042110424ab44f3cba8e17ae81cb86",
+    "bytes": 16566,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/93548ab9067e3130/108_Q_a__Angel_Blue_Problems_A.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/93548ab9067e3130/108_Q_a__Angel_Blue_Problems_A.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2018/122__Problems__wk__22.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202018/122__Problems__wk__22.lin",
+    "retrieved": "2026-09-26T00:47:02.035545+00:00",
+    "sha256": "be23400385051b2838c5b92b6355e5041935d6ca919189e06d53eeecf568ca41",
+    "bytes": 11609,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/94810fd918d9521e/122__Problems__wk__22.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/94810fd918d9521e/122__Problems__wk__22.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/39  Hondo717  -  Mentoring 2007/mentoring070924.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/39%20%20Hondo717%20%20-%20%20Mentoring%202007/mentoring070924.lin",
+    "retrieved": "2026-09-26T00:48:10.761854+00:00",
+    "sha256": "1d906145f6eecdd829e9951e6eb5ddd706bac9a91f89523ff3591fd5288382e7",
+    "bytes": 27077,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/952bb32e5abec9e3/mentoring070924.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/952bb32e5abec9e3/mentoring070924.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/23  Hondo717  -  Mentoring 2023/mentoring2301c.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/23%20%20Hondo717%20%20-%20%20Mentoring%202023/mentoring2301c.lin",
+    "retrieved": "2026-09-26T00:47:38.836339+00:00",
+    "sha256": "a72814c6d07b718aab980ef4f76553f9b2ab878a32678151dd5c0c95857a9bc7",
+    "bytes": 20914,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/97598c35e89ce449/mentoring2301c.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/97598c35e89ce449/mentoring2301c.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2010/05/31/the-aces-on-bridge-monday-may-17-2010/",
+    "final_url": "https://aces.bridgeblogging.com/2010/05/31/the-aces-on-bridge-monday-may-17-2010/",
+    "retrieved": "2026-09-26T01:08:26.092420+00:00",
+    "sha256": "e42f9c833533538bc18d5f1f0e8c9b44d109c66213f35fae1325b355c1005436",
+    "bytes": 73388,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/98d0d9ed2230c3eb/the-aces-on-bridge-monday-may-17-2010"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/98d0d9ed2230c3eb/the-aces-on-bridge-monday-may-17-2010"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2014/10/10/the-aces-on-bridge-friday-september-26th-2014/",
+    "final_url": "https://aces.bridgeblogging.com/2014/10/10/the-aces-on-bridge-friday-september-26th-2014/",
+    "retrieved": "2026-09-26T01:08:31.509643+00:00",
+    "sha256": "0407a7a024d3d9754fc4164dad9611d84be9ae1dab86e2436fe32f0a761b5fb3",
+    "bytes": 91549,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/9c8e1fe2917c877d/the-aces-on-bridge-friday-september-26th-2014"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/9c8e1fe2917c877d/the-aces-on-bridge-friday-september-26th-2014"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2017/03/10/the-aces-on-bridge-friday-february-24th-2017/",
+    "final_url": "https://aces.bridgeblogging.com/2017/03/10/the-aces-on-bridge-friday-february-24th-2017/",
+    "retrieved": "2026-09-26T01:08:35.007507+00:00",
+    "sha256": "7f34117a4f2280ab2977b126181e73c982564f5391240b5b969335fb175ac5b2",
+    "bytes": 65702,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/a161a9733f64b9a6/the-aces-on-bridge-friday-february-24th-2017"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/a161a9733f64b9a6/the-aces-on-bridge-friday-february-24th-2017"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2017/12/21/the-aces-on-bridge-thursday-december-7th-2017/",
+    "final_url": "https://aces.bridgeblogging.com/2017/12/21/the-aces-on-bridge-thursday-december-7th-2017/",
+    "retrieved": "2026-09-26T01:08:35.916000+00:00",
+    "sha256": "9a639789f95038b3eed106ed97c27d9bd8f8c1fabc6fe0b6eed2e7f381a1e7b3",
+    "bytes": 65480,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/a1df1264559d46d8/the-aces-on-bridge-thursday-december-7th-2017"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/a1df1264559d46d8/the-aces-on-bridge-thursday-december-7th-2017"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/81  Watson/022  Watson 1 - 16.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/81%20%20Watson/022%20%20Watson%201%20-%2016.lin",
+    "retrieved": "2026-09-26T00:48:14.878638+00:00",
+    "sha256": "d269b951f6f4159a2f54b9f850d9b17804b48362e489f77128d96d8a22c64d43",
+    "bytes": 31895,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/a3dd5d7f2819b128/022  Watson 1 - 16.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/a3dd5d7f2819b128/022  Watson 1 - 16.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/52  Peter51  -  Peter Nantais/IMPS vs MP 2.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/52%20%20Peter51%20%20-%20%20Peter%20Nantais/IMPS%20vs%20MP%202.lin",
+    "retrieved": "2026-09-26T00:46:43.352920+00:00",
+    "sha256": "c78c8bad96ffad90c257b0507f8ad4979680d61ef854bd0a3829230737614056",
+    "bytes": 33099,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/a456f4760044da99/IMPS vs MP 2.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/a456f4760044da99/IMPS vs MP 2.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/29  Hondo717  -  Mentoring 2017/mentoring1701d.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/29%20%20Hondo717%20%20-%20%20Mentoring%202017/mentoring1701d.lin",
+    "retrieved": "2026-09-26T00:47:51.550331+00:00",
+    "sha256": "5de328d29023c832368d9dee93b1d96bcb9015ecb6331ba4d312ada924471f34",
+    "bytes": 35071,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/a4c161e23554e390/mentoring1701d.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/a4c161e23554e390/mentoring1701d.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/27  Hondo717  -  Mentoring 2019/mentoring1904b.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/27%20%20Hondo717%20%20-%20%20Mentoring%202019/mentoring1904b.lin",
+    "retrieved": "2026-09-26T00:47:47.713741+00:00",
+    "sha256": "afe7b4fd2967db7a802308b382e3c3daf3431fd98fe71c4d1513eee84053abd2",
+    "bytes": 21253,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/a4fa3bc63843930f/mentoring1904b.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/a4fa3bc63843930f/mentoring1904b.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2017/1036__Problem__3.6.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202017/1036__Problem__3.6.lin",
+    "retrieved": "2026-09-26T00:46:59.424996+00:00",
+    "sha256": "ee9e8777e873a973025321c7daf1b08fffd4365e656cb941d50d1e9f656e8915",
+    "bytes": 7358,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/a5c90afd7c7d788f/1036__Problem__3.6.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/a5c90afd7c7d788f/1036__Problem__3.6.lin"
+  },
+  {
+    "url": "https://web.mit.edu/mitdlbc/www/session_notes/2012-03-13_12.pbn",
+    "final_url": "https://web.mit.edu/mitdlbc/www/session_notes/2012-03-13_12.pbn",
+    "retrieved": "2026-09-26T00:44:00.854320+00:00",
+    "sha256": "d751873bfd96b58a5decbe955f8ae9edcef8e11963acf7e9d9858090094b8316",
+    "bytes": 2967,
+    "content_type": null,
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/a6c18513e0824fc1/2012-03-13_12.pbn"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/a6c18513e0824fc1/2012-03-13_12.pbn"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/81  Watson/041  Watson 2 - 6.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/81%20%20Watson/041%20%20Watson%202%20-%206.lin",
+    "retrieved": "2026-09-26T00:48:15.715800+00:00",
+    "sha256": "86b0fbb680e4db36503e3d800557172308e458778ef529bb735d4dfa545ecfeb",
+    "bytes": 37594,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/a7c6081b6d759c2a/041  Watson 2 - 6.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/a7c6081b6d759c2a/041  Watson 2 - 6.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2019/09/16/the-aces-on-bridge-monday-september-2nd-2019/",
+    "final_url": "https://aces.bridgeblogging.com/2019/09/16/the-aces-on-bridge-monday-september-2nd-2019/",
+    "retrieved": "2026-09-26T01:08:38.351039+00:00",
+    "sha256": "ba929e0280d497507e92a557556afddb07a97ac40423327813f935f4eff70968",
+    "bytes": 70771,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/ab11bf48f8441333/the-aces-on-bridge-monday-september-2nd-2019"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/ab11bf48f8441333/the-aces-on-bridge-monday-september-2nd-2019"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31  Hondo717  -  Mentoring 2015/mentoring1512c.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31%20%20Hondo717%20%20-%20%20Mentoring%202015/mentoring1512c.lin",
+    "retrieved": "2026-09-26T00:47:58.001669+00:00",
+    "sha256": "0443fb87d09847b21b1af3ddbb1a2d5d6224df3b0edf4d14392e77365767a3ba",
+    "bytes": 33936,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/ab2598567157bcb6/mentoring1512c.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/ab2598567157bcb6/mentoring1512c.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/25  Lessons  -  Declarer Play Lessons/180  8  dummyreversal.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/25%20%20Lessons%20%20-%20%20Declarer%20Play%20Lessons/180%20%208%20%20dummyreversal.lin",
+    "retrieved": "2026-09-26T00:46:57.710678+00:00",
+    "sha256": "8c8f89d2b2652ae4ea94946bcb7e771d3c564720f0b9d72d06f3b811208802c1",
+    "bytes": 36066,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/acd4334871513840/180  8  dummyreversal.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/acd4334871513840/180  8  dummyreversal.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/29  Hondo717  -  Mentoring 2017/mentoring1704b.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/29%20%20Hondo717%20%20-%20%20Mentoring%202017/mentoring1704b.lin",
+    "retrieved": "2026-09-26T00:47:51.999274+00:00",
+    "sha256": "fb8d4dd8ea3e27788accc02751582ef8af9bce0a9db4e685c0dfd078eecf8d46",
+    "bytes": 37560,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/adbedda6dbd12ff4/mentoring1704b.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/adbedda6dbd12ff4/mentoring1704b.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2012/04/13/the-aces-on-bridge-friday-march-30th-2012/",
+    "final_url": "https://aces.bridgeblogging.com/2012/04/13/the-aces-on-bridge-friday-march-30th-2012/",
+    "retrieved": "2026-09-26T01:08:27.116023+00:00",
+    "sha256": "6f25a3225dcd80a3769401ab25f8010ee5c3114fac61dd06f80f3d0a21294330",
+    "bytes": 72271,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/aee9bdfff83f8aac/the-aces-on-bridge-friday-march-30th-2012"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/aee9bdfff83f8aac/the-aces-on-bridge-friday-march-30th-2012"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2015/05/13/the-aces-on-bridge-wednesday-april-29th-2015/",
+    "final_url": "https://aces.bridgeblogging.com/2015/05/13/the-aces-on-bridge-wednesday-april-29th-2015/",
+    "retrieved": "2026-09-26T01:08:32.519558+00:00",
+    "sha256": "0452da021141ea47f61847f550c4724a04fc5324f8a85dfb7247701354e427af",
+    "bytes": 85336,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/af451988e3cf7ea0/the-aces-on-bridge-wednesday-april-29th-2015"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/af451988e3cf7ea0/the-aces-on-bridge-wednesday-april-29th-2015"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2019/08/03/the-aces-on-bridge-saturday-july-20th-2019/",
+    "final_url": "https://aces.bridgeblogging.com/2019/08/03/the-aces-on-bridge-saturday-july-20th-2019/",
+    "retrieved": "2026-09-26T01:08:38.316397+00:00",
+    "sha256": "154a6e18d387d5423ff7b0edd4238cf97ccaa042cbf9758ff6271014eb00e3db",
+    "bytes": 68189,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/af9141d78057520b/the-aces-on-bridge-saturday-july-20th-2019"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/af9141d78057520b/the-aces-on-bridge-saturday-july-20th-2019"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2015/10/10/the-aces-on-bridge-saturday-september-26th-2015/",
+    "final_url": "https://aces.bridgeblogging.com/2015/10/10/the-aces-on-bridge-saturday-september-26th-2015/",
+    "retrieved": "2026-09-26T01:08:33.131761+00:00",
+    "sha256": "9f77d45b350e959e82b8e9943405ad058059b62a52c72a52911075f1ec432835",
+    "bytes": 65558,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/b00473918169d25a/the-aces-on-bridge-saturday-september-26th-2015"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/b00473918169d25a/the-aces-on-bridge-saturday-september-26th-2015"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ContractBridge/pbn-files/baa1b3df9b54d071c155670a85cbb45727c5916c/2001-6th_NEC_Cup_Bridge_Festival/S2ENGSWE.PBN",
+    "final_url": "https://raw.githubusercontent.com/ContractBridge/pbn-files/baa1b3df9b54d071c155670a85cbb45727c5916c/2001-6th_NEC_Cup_Bridge_Festival/S2ENGSWE.PBN",
+    "retrieved": "2026-09-26T00:45:01.905927+00:00",
+    "sha256": "bde7c365cd66597e6b45de2dc14ec3ee3b8cc613ebbeb8bbc88ec60b4063d0ca",
+    "bytes": 33259,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/b07014aade6042ad/S2ENGSWE.PBN"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/b07014aade6042ad/S2ENGSWE.PBN"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2018/08/18/the-aces-on-bridge-saturday-august-4th-2018/",
+    "final_url": "https://aces.bridgeblogging.com/2018/08/18/the-aces-on-bridge-saturday-august-4th-2018/",
+    "retrieved": "2026-09-26T01:08:36.911628+00:00",
+    "sha256": "5f451361706b46aeec3348afccb0dc5e8cb917acffeeccbc41cc78a0889872fe",
+    "bytes": 72980,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/b279ba989d481a1a/the-aces-on-bridge-saturday-august-4th-2018"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/b279ba989d481a1a/the-aces-on-bridge-saturday-august-4th-2018"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/200  Endplays 5 - Trunp Ending.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/200%20%20Endplays%205%20-%20Trunp%20Ending.lin",
+    "retrieved": "2026-09-26T00:47:03.162773+00:00",
+    "sha256": "f99bdbeb9875ba5678aed0bdc3360dfbfe78d0962b6fd275a9b430004b98ed50",
+    "bytes": 32717,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/b2c406f100180487/200  Endplays 5 - Trunp Ending.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/b2c406f100180487/200  Endplays 5 - Trunp Ending.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31  Hondo717  -  Mentoring 2015/mentoring1507a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31%20%20Hondo717%20%20-%20%20Mentoring%202015/mentoring1507a.lin",
+    "retrieved": "2026-09-26T00:47:56.931763+00:00",
+    "sha256": "e6e1c44a34a906b0ffcec8af7bd3640e51bbc9d11db0a991d30dd86406578a4c",
+    "bytes": 44292,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/b2cd675cba0a8237/mentoring1507a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/b2cd675cba0a8237/mentoring1507a.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/120  Endplays 1 - The Fork Position.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/120%20%20Endplays%201%20-%20The%20Fork%20Position.lin",
+    "retrieved": "2026-09-26T00:47:02.797824+00:00",
+    "sha256": "2582539d0438b9a24e5ab448ab0ef548c4c764af707fab17db7a4c33d9122ad0",
+    "bytes": 20888,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/b7ff4af222591687/120  Endplays 1 - The Fork Position.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/b7ff4af222591687/120  Endplays 1 - The Fork Position.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/30  Hondo717  -  Mentoring 2016/mentoring1607d.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/30%20%20Hondo717%20%20-%20%20Mentoring%202016/mentoring1607d.lin",
+    "retrieved": "2026-09-26T00:47:54.696807+00:00",
+    "sha256": "e2ceab6d55fcf10885c5b29f87df23863523bf87a5a2ae56256f1a938afe7931",
+    "bytes": 49525,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/ba15000e836b239f/mentoring1607d.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/ba15000e836b239f/mentoring1607d.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/30  Hondo717  -  Mentoring 2016/mentoring1608a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/30%20%20Hondo717%20%20-%20%20Mentoring%202016/mentoring1608a.lin",
+    "retrieved": "2026-09-26T00:47:54.763985+00:00",
+    "sha256": "4453a9fd75c30b6f6e75a1e6279c90eb4be60492fc8c22380086eaafc39c58aa",
+    "bytes": 25481,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/bba4a99f33263198/mentoring1608a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/bba4a99f33263198/mentoring1608a.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/30  Hondo717  -  Mentoring 2016/mentoring1607b.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/30%20%20Hondo717%20%20-%20%20Mentoring%202016/mentoring1607b.lin",
+    "retrieved": "2026-09-26T00:47:54.604636+00:00",
+    "sha256": "5517e1cb18b839ad97f9b3749ae6947736185137fc5506ffe003037196d228a7",
+    "bytes": 25297,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/bd89ee88fedd3fd6/mentoring1607b.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/bd89ee88fedd3fd6/mentoring1607b.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/37  Hondo717  -  Mentoring 2009/mentoring090604.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/37%20%20Hondo717%20%20-%20%20Mentoring%202009/mentoring090604.lin",
+    "retrieved": "2026-09-26T00:48:07.352317+00:00",
+    "sha256": "5528018a29281f8cc9e273cd9192964f4760833cd8ee140174d807e608747531",
+    "bytes": 39330,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/c0628cbb4e537f18/mentoring090604.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/c0628cbb4e537f18/mentoring090604.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/37  Listen to the Experts/LttE  2008-09-09  5th bDay  Al's Goulash.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/37%20%20Listen%20to%20the%20Experts/LttE%20%202008-09-09%20%205th%20bDay%20%20Al%27s%20Goulash.lin",
+    "retrieved": "2026-09-26T00:46:42.056265+00:00",
+    "sha256": "cb700e80aded728e3ce4ea6831c0a8eb67eeaedccad0dfe8047234866a9f88a8",
+    "bytes": 29903,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/c4ca372093bd140f/LttE  2008-09-09  5th bDay  Al_s Goulash.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/c4ca372093bd140f/LttE  2008-09-09  5th bDay  Al_s Goulash.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2014/09/10/the-aces-on-bridge-wednesday-august-27th-2014/",
+    "final_url": "https://aces.bridgeblogging.com/2014/09/10/the-aces-on-bridge-wednesday-august-27th-2014/",
+    "retrieved": "2026-09-26T01:08:31.175533+00:00",
+    "sha256": "888af361c081088afe830854088267582f8969d9531d914a2eb2b0321e6218f2",
+    "bytes": 69211,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/c9f276d3bbbba957/the-aces-on-bridge-wednesday-august-27th-2014"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/c9f276d3bbbba957/the-aces-on-bridge-wednesday-august-27th-2014"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/28  Hondo717  -  Mentoring 2018/mentoring1812a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/28%20%20Hondo717%20%20-%20%20Mentoring%202018/mentoring1812a.lin",
+    "retrieved": "2026-09-26T00:47:51.200476+00:00",
+    "sha256": "4282ec4451f89f91c30c6014d2f78cfdb8581ce12377ebaa01e2dbc900d3d041",
+    "bytes": 27129,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/cb39847373806f28/mentoring1812a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/cb39847373806f28/mentoring1812a.lin"
+  },
+  {
+    "url": "https://rpbridge.net/7c90.htm",
+    "final_url": "https://rpbridge.net/7c90.htm",
+    "retrieved": "2026-09-26T00:57:25.331105+00:00",
+    "sha256": "4ce058d55188f8f129da69b7ce445d9a01d39423ee148c3308de2593887c3d98",
+    "bytes": 4355,
+    "content_type": "text/html",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/d047351a46716412/7c90.htm"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/d047351a46716412/7c90.htm"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/24  Hondo717  -  Mentoring 2022/mentoring2205a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/24%20%20Hondo717%20%20-%20%20Mentoring%202022/mentoring2205a.lin",
+    "retrieved": "2026-09-26T00:47:41.280700+00:00",
+    "sha256": "395d3afc9a16d7d75b4230363c6548a8f910198b980fe415633a64fde3ca39fc",
+    "bytes": 21519,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/d0cec6e43f8c5888/mentoring2205a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/d0cec6e43f8c5888/mentoring2205a.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/170  Endplays 3 - Quiz.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/170%20%20Endplays%203%20-%20Quiz.lin",
+    "retrieved": "2026-09-26T00:47:03.039676+00:00",
+    "sha256": "6057820fc2d405bb85e99035f68eaa26434c309e731387ee242f324b3e522633",
+    "bytes": 20410,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/d151f482a5d8d916/170  Endplays 3 - Quiz.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/d151f482a5d8d916/170  Endplays 3 - Quiz.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2018/135__Problems__wk__35.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202018/135__Problems__wk__35.lin",
+    "retrieved": "2026-09-26T00:47:02.509010+00:00",
+    "sha256": "df4085bbd3a6e149e2b79ce54c94a865d37fe977a2fe693a8abdae6888a9daa2",
+    "bytes": 14767,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/d192bb26313f7919/135__Problems__wk__35.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/d192bb26313f7919/135__Problems__wk__35.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2013/01/23/the-aces-on-bridge-wednesday-january-9th-2013/",
+    "final_url": "https://aces.bridgeblogging.com/2013/01/23/the-aces-on-bridge-wednesday-january-9th-2013/",
+    "retrieved": "2026-09-26T01:08:28.215033+00:00",
+    "sha256": "055b5576899a9d48e1d8b8d65cd4b5237388e55f56e1355850ad4f507eaad8aa",
+    "bytes": 77004,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/d6ed0a8b877033a1/the-aces-on-bridge-wednesday-january-9th-2013"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/d6ed0a8b877033a1/the-aces-on-bridge-wednesday-january-9th-2013"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2018/07/25/the-aces-on-bridge-wednesday-july-11th-2018/",
+    "final_url": "https://aces.bridgeblogging.com/2018/07/25/the-aces-on-bridge-wednesday-july-11th-2018/",
+    "retrieved": "2026-09-26T01:08:36.872589+00:00",
+    "sha256": "84e41ba10bc8d812ad5e279e4256294169c6db692fd7eef41b69bc122c3e214a",
+    "bytes": 72629,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/d79fe84a27e984f3/the-aces-on-bridge-wednesday-july-11th-2018"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/d79fe84a27e984f3/the-aces-on-bridge-wednesday-july-11th-2018"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/58  Writer    -  Roger on Squeezes/111_Q_c__Angel_Blue_Problems_C.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/58%20%20Writer%20%20%20%20-%20%20Roger%20on%20Squeezes/111_Q_c__Angel_Blue_Problems_C.lin",
+    "retrieved": "2026-09-26T00:47:05.648110+00:00",
+    "sha256": "57c4441e9763a60cd8799be13941a83b70ebba98dd3a34eb7bc5d7fb0b857272",
+    "bytes": 13665,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/d7e0d8c5efab58ea/111_Q_c__Angel_Blue_Problems_C.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/d7e0d8c5efab58ea/111_Q_c__Angel_Blue_Problems_C.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/58  Writer    -  Roger on Squeezes/110_Q_b__Angel_Blue_Problems_B.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/58%20%20Writer%20%20%20%20-%20%20Roger%20on%20Squeezes/110_Q_b__Angel_Blue_Problems_B.lin",
+    "retrieved": "2026-09-26T00:47:05.623226+00:00",
+    "sha256": "d7358cb947f9c9f4af0d7d4c1aad06dcd57e69b83f884f39ff038112524cac43",
+    "bytes": 13479,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/d7e205d2793100ff/110_Q_b__Angel_Blue_Problems_B.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/d7e205d2793100ff/110_Q_b__Angel_Blue_Problems_B.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/75  System  -  Dan Neil Precision  2013/013  7  Interesting Hands.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/75%20%20System%20%20-%20%20Dan%20Neil%20Precision%20%202013/013%20%207%20%20Interesting%20Hands.lin",
+    "retrieved": "2026-09-26T00:47:09.473888+00:00",
+    "sha256": "e990d195acd0c2c06ae9ff360a57da5246b6ebf431b0591f364c098dc7cdcdc4",
+    "bytes": 31026,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/d81ff2171604cd2d/013  7  Interesting Hands.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/d81ff2171604cd2d/013  7  Interesting Hands.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2016/06/14/the-aces-on-bridge-tuesday-may-31st-2016/",
+    "final_url": "https://aces.bridgeblogging.com/2016/06/14/the-aces-on-bridge-tuesday-may-31st-2016/",
+    "retrieved": "2026-09-26T01:08:34.099942+00:00",
+    "sha256": "6ed0199fed3d27bbcc126945cd606fbee8a0fc92579453022d785fdb8167783f",
+    "bytes": 81318,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/d9217e62dbc4b9b4/the-aces-on-bridge-tuesday-may-31st-2016"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/d9217e62dbc4b9b4/the-aces-on-bridge-tuesday-may-31st-2016"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/BSalita/pbns/30327324935ba90a2d93faa1ab5cfad840c0a4a0/birm2000/br3part1.pbn",
+    "final_url": "https://raw.githubusercontent.com/BSalita/pbns/30327324935ba90a2d93faa1ab5cfad840c0a4a0/birm2000/br3part1.pbn",
+    "retrieved": "2026-09-26T00:45:01.664117+00:00",
+    "sha256": "b2cfe54bdc3b4b674cc451a70aac9ebb648959413ee082b7b3801152fe629ab8",
+    "bytes": 14209,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/db9e1b33eaabb245/br3part1.pbn"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/db9e1b33eaabb245/br3part1.pbn"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/73  For Beginners  -  Albrecht Hollstein/Suit 6-1m.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/73%20%20For%20Beginners%20%20-%20%20Albrecht%20Hollstein/Suit%206-1m.lin",
+    "retrieved": "2026-09-26T00:48:13.741784+00:00",
+    "sha256": "ae54e5e3a594d7c6e98193164181a059ae66c814ac726882783d83b5a178f886",
+    "bytes": 10167,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/dc937c29f1660715/Suit 6-1m.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/dc937c29f1660715/Suit 6-1m.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/29  Hondo717  -  Mentoring 2017/mentoring1702a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/29%20%20Hondo717%20%20-%20%20Mentoring%202017/mentoring1702a.lin",
+    "retrieved": "2026-09-26T00:47:51.595273+00:00",
+    "sha256": "de285be3613d0988e06924cb77b50b234330744346ecee0e46b12273f8a8ea07",
+    "bytes": 39414,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/decfc58dbd2a4b08/mentoring1702a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/decfc58dbd2a4b08/mentoring1702a.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/24  Hondo717  -  Mentoring 2022/mentoring2207c.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/24%20%20Hondo717%20%20-%20%20Mentoring%202022/mentoring2207c.lin",
+    "retrieved": "2026-09-26T00:47:41.624086+00:00",
+    "sha256": "8055a0ab688194d942d63e628ede273665d688832008d3ca38cc2cf2c014a187",
+    "bytes": 21339,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/def5cf52badd890e/mentoring2207c.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/def5cf52badd890e/mentoring2207c.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2013/03/23/the-aces-on-bridge-saturday-march-9th-2013/",
+    "final_url": "https://aces.bridgeblogging.com/2013/03/23/the-aces-on-bridge-saturday-march-9th-2013/",
+    "retrieved": "2026-09-26T01:08:28.347387+00:00",
+    "sha256": "3968856d51170e432f9f2ebf91390b056f28cb62f8dd72817be58e80a8e7a447",
+    "bytes": 76463,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/df69b4870d8d73c9/the-aces-on-bridge-saturday-march-9th-2013"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/df69b4870d8d73c9/the-aces-on-bridge-saturday-march-9th-2013"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53  Writer    -  Angel Blue  Endplays/250  Endplays 7 - Quiz.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/53%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Endplays/250%20%20Endplays%207%20-%20Quiz.lin",
+    "retrieved": "2026-09-26T00:47:03.377596+00:00",
+    "sha256": "8eabf3c59ca012acb35abbd14d85ef154b0a28ee5e81394beda60e1020ce69d9",
+    "bytes": 13290,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/df9c2f16bdf21ab7/250  Endplays 7 - Quiz.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/df9c2f16bdf21ab7/250  Endplays 7 - Quiz.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31  Hondo717  -  Mentoring 2015/mentoring1503e.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/31%20%20Hondo717%20%20-%20%20Mentoring%202015/mentoring1503e.lin",
+    "retrieved": "2026-09-26T00:47:56.368561+00:00",
+    "sha256": "d2784593bb38de3823f62bbe1c39cc2a52bbdf41543dc5d160a73d16a3934b49",
+    "bytes": 50517,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/e30b6902635427fc/mentoring1503e.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/e30b6902635427fc/mentoring1503e.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2012/08/04/the-aces-on-bridge-saturday-july-21st-2012/",
+    "final_url": "https://aces.bridgeblogging.com/2012/08/04/the-aces-on-bridge-saturday-july-21st-2012/",
+    "retrieved": "2026-09-26T01:08:27.361094+00:00",
+    "sha256": "f8327b12e4f4a048e6b5ca0bd852cc44e588cb4d0f647b040f770e8e294d6276",
+    "bytes": 65566,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/e34ab3e07c9c3abd/the-aces-on-bridge-saturday-july-21st-2012"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/e34ab3e07c9c3abd/the-aces-on-bridge-saturday-july-21st-2012"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/58  Writer    -  Roger on Squeezes/112_Q_d__Angel_Blue_Problems_D.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/58%20%20Writer%20%20%20%20-%20%20Roger%20on%20Squeezes/112_Q_d__Angel_Blue_Problems_D.lin",
+    "retrieved": "2026-09-26T00:47:05.774404+00:00",
+    "sha256": "ef0ae9acc0b9d4b776e4123efdb6c18154040db193b31c075fe4548abfc0e10b",
+    "bytes": 13020,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/e3a401f9722ff2c3/112_Q_d__Angel_Blue_Problems_D.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/e3a401f9722ff2c3/112_Q_d__Angel_Blue_Problems_D.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/25  Lessons  -  Declarer Play Lessons/130  3  countingwinners.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/25%20%20Lessons%20%20-%20%20Declarer%20Play%20Lessons/130%20%203%20%20countingwinners.lin",
+    "retrieved": "2026-09-26T00:46:57.457693+00:00",
+    "sha256": "62ce1565708cbba4a1f059cdb3bde6d5a00b0f18feee53d43139f4394dfb6576",
+    "bytes": 48303,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/e5ec338fae35fd9a/130  3  countingwinners.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/e5ec338fae35fd9a/130  3  countingwinners.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/73  For Beginners  -  Albrecht Hollstein/Suit 7-1a.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/73%20%20For%20Beginners%20%20-%20%20Albrecht%20Hollstein/Suit%207-1a.lin",
+    "retrieved": "2026-09-26T00:48:13.816480+00:00",
+    "sha256": "f78aaa13bdf0533801a19c08b1775ff98f4e6ea8abac89418550095b0d2e98b4",
+    "bytes": 13147,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/ebaa94aded8b07b0/Suit 7-1a.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/ebaa94aded8b07b0/Suit 7-1a.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/10  BSeagram  -  Barbara Seagram/117  BSeagram 2014 Nov.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/10%20%20BSeagram%20%20-%20%20Barbara%20Seagram/117%20%20BSeagram%202014%20Nov.lin",
+    "retrieved": "2026-09-26T00:46:39.640622+00:00",
+    "sha256": "f4f664f307834ad0f27f6f782a16ff7671913e4edf25a1b8494a5b147ab61500",
+    "bytes": 25717,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/ee650bf0a30eb8d5/117  BSeagram 2014 Nov.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/ee650bf0a30eb8d5/117  BSeagram 2014 Nov.lin"
+  },
+  {
+    "url": "https://csbnews.org/en/another-case-of-dummy-reversal-by-charles-goren/",
+    "final_url": "https://csbnews.org/en/another-case-of-dummy-reversal-by-charles-goren/",
+    "retrieved": "2026-09-26T01:04:35.142390+00:00",
+    "sha256": "9de33b23c09a50152071bbe5c70297e13b609265bcf517aaa09abac435b483f3",
+    "bytes": 446669,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/eff0a3a5554084ac/another-case-of-dummy-reversal-by-charles-goren"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/eff0a3a5554084ac/another-case-of-dummy-reversal-by-charles-goren"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2018/114__Squeezes__A.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202018/114__Squeezes__A.lin",
+    "retrieved": "2026-09-26T00:47:01.703618+00:00",
+    "sha256": "2f25fb0167813a4e72969486e4d624d68e8d9c0e902aeafcc76fa8c17fa9cf71",
+    "bytes": 14446,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/f1749c160b041ea4/114__Squeezes__A.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/f1749c160b041ea4/114__Squeezes__A.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/30  Hondo717  -  Mentoring 2016/mentoring1609c.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/30%20%20Hondo717%20%20-%20%20Mentoring%202016/mentoring1609c.lin",
+    "retrieved": "2026-09-26T00:47:55.025746+00:00",
+    "sha256": "b4c9d265ece70f44abc17da5d0a2bfca4ba0da7f92f0089603c679216b31d716",
+    "bytes": 41349,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/f325194961be0116/mentoring1609c.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/f325194961be0116/mentoring1609c.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2019/02/04/the-aces-on-bridge-monday-january-21st-2019/",
+    "final_url": "https://aces.bridgeblogging.com/2019/02/04/the-aces-on-bridge-monday-january-21st-2019/",
+    "retrieved": "2026-09-26T01:08:37.416106+00:00",
+    "sha256": "cbcbfe08132996bc017a829d5a71d0db2acf7b8b4f9fa32ff2793872b3c0fddb",
+    "bytes": 76468,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/f3d0f1f8fc766559/the-aces-on-bridge-monday-january-21st-2019"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/f3d0f1f8fc766559/the-aces-on-bridge-monday-january-21st-2019"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/35  Hondo717  -  Mentoring 2011/mentoring1107b.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/35%20%20Hondo717%20%20-%20%20Mentoring%202011/mentoring1107b.lin",
+    "retrieved": "2026-09-26T00:48:04.738096+00:00",
+    "sha256": "1f6202c5f400d288d956d4a7885c1c3dfa4791fd7f7585892c24fc83792f9c5a",
+    "bytes": 29251,
+    "content_type": "application/octet-stream",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/f6096cfab9167c62/mentoring1107b.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/f6096cfab9167c62/mentoring1107b.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/56  RDK - Ron Klinger/Ron Klinger - Commentary 2008-03-18.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-B/56%20%20RDK%20-%20Ron%20Klinger/Ron%20Klinger%20-%20Commentary%202008-03-18.lin",
+    "retrieved": "2026-09-26T00:46:43.587691+00:00",
+    "sha256": "ac099a93c878ea4076f073767477fd3bde41054f222630450ffb7ca37bf094c5",
+    "bytes": 43638,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/f6595ab8acb86b46/Ron Klinger - Commentary 2008-03-18.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/f6595ab8acb86b46/Ron Klinger - Commentary 2008-03-18.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2012/02/08/the-aces-on-bridge-wednesday-january-25th-2012/",
+    "final_url": "https://aces.bridgeblogging.com/2012/02/08/the-aces-on-bridge-wednesday-january-25th-2012/",
+    "retrieved": "2026-09-26T01:08:27.066990+00:00",
+    "sha256": "fc518ae15bd168a96a72070dcd20e653e9e761a75c9990643a500d9fb59a3f93",
+    "bytes": 71889,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/f851fabbd86fe646/the-aces-on-bridge-wednesday-january-25th-2012"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/f851fabbd86fe646/the-aces-on-bridge-wednesday-january-25th-2012"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2016/12/21/the-aces-on-bridge-wednesday-december-7th-2016/",
+    "final_url": "https://aces.bridgeblogging.com/2016/12/21/the-aces-on-bridge-wednesday-december-7th-2016/",
+    "retrieved": "2026-09-26T01:08:34.638593+00:00",
+    "sha256": "8861bdcc80a6c829728aec73cb50f8e1c0a83bfd22f16ab8b18cb14ee929790b",
+    "bytes": 82618,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/f8a8c144be308212/the-aces-on-bridge-wednesday-december-7th-2016"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/f8a8c144be308212/the-aces-on-bridge-wednesday-december-7th-2016"
+  },
+  {
+    "url": "https://rpbridge.net/6b00.htm",
+    "final_url": "https://rpbridge.net/6b00.htm",
+    "retrieved": "2026-09-26T00:57:12.658804+00:00",
+    "sha256": "ab4ffbf4a0c761936f8aa4bbddf80622bd1353e1bf10dc70df562c23bba52cfd",
+    "bytes": 20452,
+    "content_type": "text/html",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/fae8eef4aefed120/6b00.htm"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/fae8eef4aefed120/6b00.htm"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/35  Hondo717  -  Mentoring 2011/mentoring1106c.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books/35%20%20Hondo717%20%20-%20%20Mentoring%202011/mentoring1106c.lin",
+    "retrieved": "2026-09-26T00:48:04.544679+00:00",
+    "sha256": "4efaf6301141f54514cc04da869d8c1c16a5d645c2e315a0f8129a4c0a05045b",
+    "bytes": 23630,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/fbab551c64603376/mentoring1106c.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/fbab551c64603376/mentoring1106c.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ContractBridge/pbn-files/baa1b3df9b54d071c155670a85cbb45727c5916c/2000-74th_Fall_North_American_Bridge_Championships/br3part1.pbn",
+    "final_url": "https://raw.githubusercontent.com/ContractBridge/pbn-files/baa1b3df9b54d071c155670a85cbb45727c5916c/2000-74th_Fall_North_American_Bridge_Championships/br3part1.pbn",
+    "retrieved": "2026-09-26T00:45:02.032345+00:00",
+    "sha256": "1eec43d8dd667e6071b8e9c5016338b63c4b41657ac70728adfdad20a8310f12",
+    "bytes": 14860,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/fc42378a2b81f95d/br3part1.pbn"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/fc42378a2b81f95d/br3part1.pbn"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2019/07/13/the-aces-on-bridge-saturday-june-29th-2019/",
+    "final_url": "https://aces.bridgeblogging.com/2019/07/13/the-aces-on-bridge-saturday-june-29th-2019/",
+    "retrieved": "2026-09-26T01:08:38.016481+00:00",
+    "sha256": "75b17dfa662cca32cb8d6710396c6786428bcd5c0ec850b5578874dca95c760c",
+    "bytes": 65624,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/fc6a15fdfd048ba9/the-aces-on-bridge-saturday-june-29th-2019"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/fc6a15fdfd048ba9/the-aces-on-bridge-saturday-june-29th-2019"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2018/116__Squeezes__C.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202018/116__Squeezes__C.lin",
+    "retrieved": "2026-09-26T00:47:01.831556+00:00",
+    "sha256": "875906002898c08a135f244f6bace0e9d1606bcab9e607d0f09e927c2f4a356c",
+    "bytes": 12993,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/fca962736268f525/116__Squeezes__C.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/fca962736268f525/116__Squeezes__C.lin"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52  Writer    -  Angel Blue  Problems 2018/113__Problems__wk__13.lin",
+    "final_url": "https://raw.githubusercontent.com/RogerPf/aaBridge/33d53be8d17429787d43b6ad8a9e9a0edb5ecc65/src/Books-L/52%20%20Writer%20%20%20%20-%20%20Angel%20Blue%20%20Problems%202018/113__Problems__wk__13.lin",
+    "retrieved": "2026-09-26T00:47:01.580884+00:00",
+    "sha256": "bd97c77f56c217c34996f7d87e1f499ea39884ee246fa7d4a94fbe5abde89fd5",
+    "bytes": 10478,
+    "content_type": "text/plain; charset=utf-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/fdec0fa6093fd67a/113__Problems__wk__13.lin"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/fdec0fa6093fd67a/113__Problems__wk__13.lin"
+  },
+  {
+    "url": "https://aces.bridgeblogging.com/2016/12/03/the-aces-on-bridge-saturday-november-19th-2016/",
+    "final_url": "https://aces.bridgeblogging.com/2016/12/03/the-aces-on-bridge-saturday-november-19th-2016/",
+    "retrieved": "2026-09-26T01:08:34.454106+00:00",
+    "sha256": "4faa8e90fe74fe1e8ede7bd557f43cb948de9c72966d3755fa12a6eba9245292",
+    "bytes": 65485,
+    "content_type": "text/html; charset=UTF-8",
+    "files": [
+      {
+        "path": ".build/technique-benchmark/raw/fe0181857b2a5c6a/the-aces-on-bridge-saturday-november-19th-2016"
+      }
+    ],
+    "download": ".build/technique-benchmark/raw/fe0181857b2a5c6a/the-aces-on-bridge-saturday-november-19th-2016"
+  }
+]
