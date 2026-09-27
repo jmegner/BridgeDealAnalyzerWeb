@@ -1,0 +1,19 @@
+{
+  "fingerprint": "0a110dc42a831ee024f284d3f89b0a4fa4ab8edac0c96ab84ccd05a72ec9fb5f",
+  "codeHashes": {
+    "scripts/benchmark-search.mjs": "a4e60df3c09e8c4ffb69ce78961311a3e2fd3cdca11d1a40969f40e66aaad523",
+    "src\\analyze.js": "7966b9d6420014378417ae8f9bfdd2f8df067d40cfe1bd76c8122b0fc5680d93",
+    "src\\app.js": "266bcd9433d1af4d61779008c9604c7d69a2ec78a6aea591292a416f7ff27156",
+    "src\\bridge.js": "a56762810c61f3858ef81aed5d8a8b55b566b670da571c41d14398246198fe7c",
+    "src\\optimal-play.js": "1b0049bc962c1a84f7ff0043f5e12f21c60b0d464e3bc64da44de4b1378fae28",
+    "src\\pbn.js": "5bd25800848a558d5eb1b471011fae6cc2fbc1d96ee1125ec7bfbf1341f91e3a",
+    "src\\solver.js": "1e2874297f8b2bcce736ac5641c12c20c69d6dba57ed5e11ac2e2075e0827a9e",
+    "src\\storage.js": "26df28804da652ec9e3727a7fe20ac0568d74597466c44ec659ddcf45644f8ed",
+    "src\\techniques.js": "2d78a1fa00bc397b306adfeb1971bdd4f5d3483f0e9a09e0c71be24f7480bcd4",
+    "src\\worker.js": "9fefb4d4d6fd577230b435662db30abd692e773809b8fcc386da2068416e4ec9",
+    "vendor\\dds\\dds.js": "b7a52ab97fb30f07e204c24f6cc86fd6e29a84c654621e5c7dc4a014a464cd01",
+    "vendor\\dds\\dds.wasm": "83623555a63ffb3ce938b7383f440a7c482cd98e621546f9d20e13ec5456b07b"
+  },
+  "started": "2026-09-27T03:00:09.886Z",
+  "node": "v24.11.1"
+}

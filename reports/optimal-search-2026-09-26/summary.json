@@ -1,0 +1,42 @@
+[
+  {
+    "technique": "Squeeze",
+    "boards": 172,
+    "before": 7,
+    "par": 18,
+    "source": 18,
+    "either": 23
+  },
+  {
+    "technique": "Elimination / endplay",
+    "boards": 65,
+    "before": 4,
+    "par": 9,
+    "source": 8,
+    "either": 12
+  },
+  {
+    "technique": "Trump coup",
+    "boards": 63,
+    "before": 5,
+    "par": 12,
+    "source": 17,
+    "either": 17
+  },
+  {
+    "technique": "Dummy reversal",
+    "boards": 52,
+    "before": 9,
+    "par": 15,
+    "source": 22,
+    "either": 24
+  },
+  {
+    "technique": "Crossruff",
+    "boards": 62,
+    "before": 25,
+    "par": 46,
+    "source": 42,
+    "either": 51
+  }
+]

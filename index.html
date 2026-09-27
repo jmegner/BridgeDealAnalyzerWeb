@@ -86,6 +86,19 @@
             </button>
           </div>
         </div>
+        <div class="analysis-options">
+          <label for="contract-mode"
+            >Contract to study
+            <select id="contract-mode" aria-describedby="contract-mode-note">
+              <option value="par">Par contract</option>
+              <option value="source">PBN contract</option>
+            </select>
+          </label>
+          <p id="contract-mode-note">
+            Perfect bidding, including sacrifices. Explore up to 12 optimal
+            plays and keep one useful line.
+          </p>
+        </div>
         <div id="progress-panel" class="progress-panel" hidden>
           <div class="progress-heading">
             <span id="progress-label" role="status" aria-live="polite"></span>
@@ -112,7 +125,7 @@
                 ><input
                   id="search"
                   type="search"
-                  placeholder="Search boards, files, or suits…"
+                  placeholder="Search boards, files, or techniques…"
                   aria-label="Search hands"
               /></label>
               <div class="filter-row">
@@ -125,14 +138,6 @@
                     <option>Dummy reversal</option>
                     <option>Crossruff</option>
                     <option value="none">No technique identified</option>
-                  </select></label
-                ><label
-                  >Suit<select id="suit-filter">
-                    <option value="">Any suit</option>
-                    <option value="0">♠ Spades</option>
-                    <option value="1">♥ Hearts</option>
-                    <option value="2">♦ Diamonds</option>
-                    <option value="3">♣ Clubs</option>
                   </select></label
                 >
               </div>
@@ -209,22 +214,24 @@
         sacrifices and vulnerability.
       </p>
       <p>
-        For each board, we choose one par contract and generate a deterministic
-        line of optimal play. Every chosen card preserves the double-dummy
-        result.
+        Choose par or the PBN's supplied contract and declarer. We explore up to
+        12 deterministic optimal continuations and keep one replay with more
+        technique types, preserving the types found in the first line. Every
+        chosen card preserves the double-dummy result. Missing or invalid PBN
+        contracts fall back to par, with an explanation on the hand.
       </p>
       <h3>What a technique label means</h3>
       <p>
         A label identifies a specific pattern demonstrated in that replay. It
-        does not mean the technique was necessary, or that other lines have been
-        searched. “No technique identified” means these detectors did not find a
-        supported pattern in this line.
+        does not mean the technique was necessary or that every optimal line has
+        been searched. “No technique identified” means these detectors did not
+        find a supported pattern in the continuations explored.
       </p>
       <p>
-        The first version recognizes simple cashing squeezes, elimination with a
-        throw-in, direct trump-coup endings, dummy reversals, and repeated
-        crossruffs. Complex squeezes and other variants can be missed. Each
-        finding includes the evidence used to identify it.
+        The app recognizes simple cashing squeezes, elimination with a throw-in,
+        direct trump-coup endings, dummy reversals, and repeated crossruffs.
+        Complex squeezes and other variants can be missed. Each finding includes
+        the evidence used to identify it.
       </p>
       <h3>Your files stay with you</h3>
       <p>

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "boards": 412,
+  "replaysVerified": 824,
+  "optimalTrialsCheckedDuringAnalysis": 9888,
+  "allOriginalTechniqueFamiliesPreserved": true,
+  "allParResultsUnchanged": true,
+  "allEvidenceRecomputedFromSelectedReplay": true
+}

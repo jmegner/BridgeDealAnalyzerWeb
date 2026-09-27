@@ -2,7 +2,7 @@
 
 A static bridge hand browser for finding examples of play techniques in batches of PBN files. Inspired by [Dan Egner's proposal](https://bridgewinners.com/article/view/what-software-tells-of-play-techniques/).
 
-Import complete deals, calculate dealer par (including sacrifices and vulnerability), then study one deterministic line of optimal play per board. Filter by technique or suit and jump to the relevant play. Files and analysis stay on the user's device.
+Import complete deals, calculate dealer par (including sacrifices and vulnerability), then study one useful replay selected from up to 12 optimal continuations. Choose the par contract or the PBN's teaching contract. Filter by technique and jump to the relevant play. Files and analysis stay on the user's device.
 
 ## Run locally
 
@@ -32,9 +32,11 @@ Alternatively, publish `main` / root using GitHub Pages' branch source; `.nojeky
 - Choose or drop multiple `.pbn` files, then choose **Analyze hands**. The sample button imports and analyzes a small collection.
 - Every board must contain four complete hands (52 unique cards). Malformed records are reported without dropping valid records from the same file. Unknown hands and partial deals are not supported.
 - `[Dealer]` and `[Vulnerable]` determine par. When omitted, a positive numeric `[Board]` permits standard board-cycle inference, shown as a warning. Unknown metadata without a usable board number is rejected.
+- **Contract to study** selects **Par contract** (the default) or **PBN contract**. PBN mode reads `[Contract]` and `[Declarer]`, including doubles/redoubles; missing, invalid, or passed-out contracts use par with a visible explanation. It does not infer a contract from the auction or replay supplied Play tags.
 - Standard tag comments, rotated `Deal` hands, empty/`-` void suits, `T` for ten, and `#` tag inheritance are supported. Existing auction, result and play tags do not constrain the new analysis.
-- Duplicate card distributions with the same dealer and vulnerability are skipped, even across files.
-- Filter by technique/suit or text search. Click a technique or evidence step to jump to the critical position. The slider, arrow buttons and autoplay replay all 52 cards; arrow keys and space work when a form control does not have focus.
+- Duplicate card distributions with the same dealer, vulnerability and source contract are skipped, even across files. Different source contracts remain separate study records.
+- Each contract mode has its own saved replay, score and findings. Switch modes to reuse completed results; choose **Analyze** for hands not yet analyzed in that mode. PBN scores are shown separately from the par benchmark. Old analysis versions are queued for reanalysis.
+- Filter by technique or text search. Click a technique or evidence step to jump to the critical position. The slider, arrow buttons and autoplay replay all 52 cards; arrow keys and space work when a form control does not have focus.
 - Results are saved in IndexedDB in the same browser and origin. Clearing site data removes them. **Export results** downloads a JSON archive containing deals, par, play, and findings. This version does not import JSON archives; original PBNs can always be reanalyzed.
 - **Stop** preserves completed hands; **Analyze** resumes unfinished/error hands. **Skip this hand** moves past a slow board. A 3-minute per-board limit prevents one difficult deal from blocking the batch indefinitely.
 
@@ -42,7 +44,9 @@ Alternatively, publish `main` / root using GitHub Pages' branch source; `.nojeky
 
 DDS3 calculates the 20 trick counts and `DealerParBin` supplies the par score and contract alternatives. One contract is selected deterministically: strain order S/H/D/C/NT, then the longer trump hand as declarer, compass order, and level. All par alternatives remain visible.
 
-For each play, DDS evaluates legal moves and the app selects one with the optimal trick count. Among equally good defensive moves it prefers lower cards, often preserving guards until the technique becomes visible. Declarer follows DDS's ordering, taking the lowest equivalent card. **No defender is allowed to give away a trick to produce a technique.** The resulting replay is checked against the table and par score.
+The app explores at most 12 deterministic optimal continuations: the original DDS-order line, alternative optimal opening leads, and preferences for ruffs, shortening either declaring hand, cashing side suits, and varied tie choices. Every candidate move must have the best DDS value. Defenders still prefer lower equally good cards after the opening lead. **No player is allowed to give away a trick to produce a technique.** Every trial is checked card by card and against the double-dummy table; par-mode scores are also checked against par. PBN-mode scores may differ from par.
+
+One replay is retained, preferring more distinct technique types while preserving the types identified in the original line. Ties keep the earlier candidate. Findings from different lines are never combined. This is a bounded search, not an exhaustive search of optimal play, and does not use source labels or recorded source plays. The details panel and JSON export record the number of trials, distinct lines and selected line.
 
 The recognition layer contains conservative pattern detectors for:
 
@@ -52,7 +56,7 @@ The recognition layer contains conservative pattern detectors for:
 - Dummy reversals where declarer ruffs, dummy becomes longer, and dummy draws a remaining defensive trump.
 - Repeated crossruffs adding trump tricks beyond the original longer holding.
 
-These are **examples in the recorded line, not claims of necessity or exhaustive detection**. Pattern recognition is separate from DDS's exact trick calculations. Complex variants, other contracts and other optimal lines can be missed. Use the evidence and replay to review a finding. A sacrifice can contain an interesting technique even though the contract goes down. Passed-out par deals have no replay.
+These are **examples in the recorded line, not claims of necessity or exhaustive detection**. Pattern recognition is separate from DDS's exact trick calculations. Complex variants, unsearched contracts and other optimal lines can be missed. Use the evidence and replay to review a finding. A sacrifice can contain an interesting technique even though the contract goes down. Passed-out par deals have no par replay; a supplied source contract can still be studied.
 
 See [the detector specification](docs/detection.md) for coverage and limitations.
 
@@ -68,6 +72,8 @@ npm run build
 Node tests exercise parsing, scoring, legal play, real WASM solving, par sacrifices, card-by-card optimality, and positive/negative detector fixtures. Browser tests use the actual solver at a project subpath without cross-origin isolation and cover upload, malformed files, deduplication, filters, replay, persistence, export, mobile layout and stop/resume. CI tests the packaged `dist/` site.
 
 `node scripts/inspect-samples.mjs [file.pbn]` prints computed contracts, findings and play for development. `node scripts/find-examples.mjs 1000` explores a repeatable generated corpus and writes newly discovered examples to ignored `.build/`.
+
+The [412-deal comparison](reports/optimal-search-2026-09-26/README.md) measures the bounded search and both contract modes against the original benchmark. Reproduce it with `node scripts/benchmark-search.mjs` and `node scripts/benchmark-search-report.mjs`.
 
 ## Rebuilding the solver
 

@@ -93,7 +93,7 @@ export function replay(hands, contract, cards) {
 }
 export function contractText(c) {
   return c
-    ? `${c.level}${SYMBOLS[c.trump]}${c.doubled ? "×" : ""} ${SHORT_SEATS[c.declarer]}`
+    ? `${c.level}${SYMBOLS[c.trump]}${"×".repeat(c.doubled || 0)} ${SHORT_SEATS[c.declarer]}`
     : "Passed out";
 }
 export function resultText(c, tricks) {

@@ -6,8 +6,12 @@ self.onmessage = async ({ data }) => {
   try {
     solverPromise ??= createSolver();
     const solver = await solverPromise;
-    const analysis = analyzeBoard(data.board, solver, (progress) =>
-      self.postMessage({ type: "progress", id: data.id, ...progress }),
+    const analysis = analyzeBoard(
+      data.board,
+      solver,
+      (progress) =>
+        self.postMessage({ type: "progress", id: data.id, ...progress }),
+      data.options,
     );
     self.postMessage({ type: "result", id: data.id, analysis });
   } catch (error) {

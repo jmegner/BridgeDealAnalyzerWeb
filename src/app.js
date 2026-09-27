@@ -1,8 +1,7 @@
-import { parsePbn } from "./pbn.js";
+import { parsePbn, sourceContractFromTags } from "./pbn.js";
 import {
   SEATS,
   SHORT_SEATS,
-  SUITS,
   SYMBOLS,
   RANKS,
   suit,
@@ -30,7 +29,19 @@ const coloredCard = (card) =>
   `<span class="${[1, 2].includes(suit(card)) ? "red" : ""}">${cardText(card)}</span>`;
 const vulnerability = ["None", "Both", "N–S", "E–W"];
 const signature = (b) =>
-  `${b.hands.flat().join(",")}/${b.dealer}/${b.vulnerable}`;
+  `${b.hands.flat().join(",")}/${b.dealer}/${b.vulnerable}/${JSON.stringify(b.sourceContract ?? null)}`;
+let contractMode = "par";
+try {
+  if (localStorage.getItem("bridge-study-contract-mode") === "source")
+    contractMode = "source";
+} catch {}
+$("contract-mode").value = contractMode;
+function activateMode(row) {
+  row.analyses ??= {};
+  row.analysis = row.analyses[contractMode] ?? null;
+  row.status = row.analysis ? "done" : "queued";
+  row.error = null;
+}
 let rows = [],
   selectedId = null,
   states = [],
@@ -47,14 +58,11 @@ let worker = null,
 let importErrors = [];
 const currentRow = () => rows.find((r) => r.id === selectedId);
 function preferredFinding(row) {
-  const technique = $("technique-filter").value,
-    strain = $("suit-filter").value;
+  const technique = $("technique-filter").value;
   return Math.max(
     0,
     row?.analysis?.findings.findIndex(
-      (f) =>
-        (!technique || f.technique === technique) &&
-        (strain === "" || f.suits.includes(Number(strain))),
+      (f) => !technique || f.technique === technique,
     ) ?? 0,
   );
 }
@@ -82,28 +90,18 @@ function showErrors() {
 }
 function filteredRows() {
   const query = $("search").value.trim().toLowerCase(),
-    technique = $("technique-filter").value,
-    strain = $("suit-filter").value;
+    technique = $("technique-filter").value;
   return rows.filter((r) => {
     const findings = r.analysis?.findings || [];
     const searchable =
-      `${r.board} ${r.source} ${r.event} ${findings.map((f) => `${f.technique} ${f.title} ${f.suits.map((s) => SUITS[s]).join(" ")}`).join(" ")}`.toLowerCase();
+      `${r.board} ${r.source} ${r.event} ${findings.map((f) => `${f.technique} ${f.title}`).join(" ")}`.toLowerCase();
     if (query && !searchable.includes(query)) return false;
     if (technique === "none" && (r.status !== "done" || findings.length))
       return false;
     if (
       technique &&
       technique !== "none" &&
-      !findings.some(
-        (f) =>
-          f.technique === technique &&
-          (strain === "" || f.suits.includes(Number(strain))),
-      )
-    )
-      return false;
-    if (
-      strain !== "" &&
-      !findings.some((f) => f.suits.includes(Number(strain)))
+      !findings.some((f) => f.technique === technique)
     )
       return false;
     return true;
@@ -117,6 +115,11 @@ function renderLibrary() {
   $("board-count").textContent = rows.length;
   $("clear-button").hidden = !rows.length;
   $("clear-button").disabled = busy;
+  $("contract-mode").disabled = busy;
+  $("contract-mode-note").textContent =
+    contractMode === "par"
+      ? "Perfect bidding, including sacrifices. Explore up to 12 optimal plays and keep one useful line."
+      : "Study the PBN's Contract and Declarer. Hands without a usable contract use par.";
   const completed = rows.filter((r) => r.status === "done").length;
   const pending = rows.filter(
     (r) => r.status === "queued" || r.status === "error",
@@ -132,7 +135,9 @@ function renderLibrary() {
       : rows.length
         ? "Analysis complete ✓"
         : 'Analyze hands <span aria-hidden="true">→</span>';
-  $("export-button").disabled = !completed;
+  $("export-button").disabled = !rows.some(
+    (r) => r.analysis || Object.keys(r.analyses || {}).length,
+  );
   $("board-list").innerHTML = visible.length
     ? visible
         .map((r) => {
@@ -156,7 +161,7 @@ function renderLibrary() {
     </button>`;
         })
         .join("")
-    : `<div class="list-empty"><span class="list-empty-symbol" aria-hidden="true">♧</span><strong>${rows.length ? "No matching hands" : "A fresh deck of possibilities"}</strong>${rows.length ? "Try a different technique, suit, or search." : "Your imported hands will appear here."}</div>`;
+    : `<div class="list-empty"><span class="list-empty-symbol" aria-hidden="true">♧</span><strong>${rows.length ? "No matching hands" : "A fresh deck of possibilities"}</strong>${rows.length ? "Try a different technique or search." : "Your imported hands will appear here."}</div>`;
   if (previous !== selectedId) {
     stopPlayback();
     ply = 0;
@@ -186,7 +191,7 @@ function renderHand() {
   if (!row.analysis) {
     states = [];
     $("hand-view").innerHTML =
-      `<div class="pending-view"><p class="eyebrow">BOARD ${escape(row.board)}</p><h2>${row.status === "running" ? "Finding the story in this hand…" : row.status === "error" ? "This hand needs another look." : "Your hand is ready."}</h2><p>${row.status === "error" ? escape(row.error) : row.status === "running" ? "Calculating par, playing all 52 cards, and looking for techniques. You can browse completed hands while this runs." : "Choose Analyze hands to find the par contract and explore a line of optimal play."}</p>${row.status === "error" && !busy ? '<button class="button primary" id="retry-hand">Retry this hand →</button>' : ""}</div>`;
+      `<div class="pending-view"><p class="eyebrow">BOARD ${escape(row.board)}</p><h2>${row.status === "running" ? "Finding the story in this hand…" : row.status === "error" ? "This hand needs another look." : "Your hand is ready."}</h2><p>${row.status === "error" ? escape(row.error) : row.status === "running" ? "Exploring optimal plays and looking for techniques. You can browse completed hands while this runs." : `Choose Analyze hands to study ${contractMode === "source" ? "the PBN contract" : "the par contract"} and find a useful line of optimal play.`}</p>${contractMode === "source" ? `<p>${row.sourceContract ? `PBN contract: ${escape(contractText(row.sourceContract))}.` : escape(row.sourceContractWarning)}</p>` : ""}${row.status === "error" && !busy ? '<button class="button primary" id="retry-hand">Retry this hand →</button>' : ""}</div>`;
     $("retry-hand")?.addEventListener("click", () => startAnalysis(row.id));
     return;
   }
@@ -194,20 +199,21 @@ function renderHand() {
   if (!a.contract) {
     states = [];
     $("hand-view").innerHTML =
-      `<div class="pending-view"><p class="eyebrow">BOARD ${escape(row.board)}</p><h2>Passed out at par.</h2><p>Neither side can profitably bid. Par is 0, so there is no contract to replay for this board.</p></div><div class="analysis-details"><details open><summary>Double-dummy table</summary>${tableMarkup(a)}</details></div>`;
+      `<div class="pending-view"><p class="eyebrow">BOARD ${escape(row.board)}</p><h2>Passed out at par.</h2><p>Neither side can profitably bid. Par is 0, so there is no contract to replay for this board.</p>${a.fallbackReason ? `<p>${escape(a.fallbackReason)}</p>` : ""}</div><div class="analysis-details"><details open><summary>Double-dummy table</summary>${tableMarkup(a)}</details></div>`;
     return;
   }
   states = replay(row.hands, a.contract, a.cards);
   const techniques = a.findings;
   findingIndex = Math.min(findingIndex, Math.max(0, techniques.length - 1));
   $("hand-view").innerHTML = `
-    <div class="hand-heading"><div><p class="eyebrow">ONE OPTIMAL LINE · ALL CARDS KNOWN</p><h2>Board ${escape(row.board)}</h2><small>${escape(row.event || row.source)}</small></div><div class="par-summary"><div class="contract-large">${escape(contractText(a.contract))} <span class="result">${resultText(a.contract, a.tricks)}</span></div><small>Par · N–S ${a.par.score > 0 ? "+" : ""}${a.par.score}</small></div></div>
+    <div class="hand-heading"><div><p class="eyebrow">ONE OPTIMAL LINE · ALL CARDS KNOWN</p><h2>Board ${escape(row.board)}</h2><small>${escape(row.event || row.source)}</small></div><div class="par-summary"><div class="contract-large">${escape(contractText(a.contract))} <span class="result">${resultText(a.contract, a.tricks)}</span></div><small>${a.contractOrigin === "source" ? "PBN contract" : "Par contract"} · N–S ${a.scoreNS > 0 ? "+" : ""}${a.scoreNS}</small>${a.contractOrigin === "source" ? `<br><small>Par benchmark · N–S ${a.par.score > 0 ? "+" : ""}${a.par.score}</small>` : ""}</div></div>
     <div class="hand-meta"><span>Dealer <strong>${SEATS[row.dealer]}</strong></span><span>Vulnerable <strong>${vulnerability[row.vulnerable]}</strong></span><span>Declarer <strong>${SEATS[a.contract.declarer]}</strong></span><span><strong>${a.tricks}</strong> tricks with best play</span></div>
     ${row.warnings.length ? `<div class="warnings">${row.warnings.map(escape).join(" ")}</div>` : ""}
+    ${a.fallbackReason ? `<div class="warnings">${escape(a.fallbackReason)}</div>` : ""}
     <div class="deal-area"><div class="deal-toolbar"><span id="deal-caption">The full deal</span><label><input type="checkbox" id="show-played" ${showPlayed ? "checked" : ""}> Show played cards</label></div><div class="deal-table" id="deal-table"></div><p class="replay-caption" id="replay-caption" aria-live="polite"></p></div>
     <div class="replay-controls"><input type="range" id="play-slider" min="0" max="52" value="${ply}" aria-label="Card position in replay"><div class="replay-buttons"><div class="transport"><button id="first-card" aria-label="Go to beginning" title="Beginning">⇤</button><button id="previous-card" aria-label="Previous card" title="Previous card (←)">←</button><button class="play" id="toggle-play" aria-label="Play replay" title="Play or pause (space)">▶</button><button id="next-card" aria-label="Next card" title="Next card (→)">→</button><button id="last-card" aria-label="Go to end" title="End">⇥</button></div><span class="replay-position" id="replay-position"></span><span class="keyboard-hint">← → to step · space to play</span></div></div>
     <div class="findings"><div class="section-label"><h3>What to look for</h3><small>FOUND IN THIS LINE</small></div>${techniques.length ? `<div class="finding-tabs">${techniques.map((f, i) => `<button class="finding-tab ${i === findingIndex ? "selected" : ""}" data-finding="${i}">${escape(f.technique)}</button>`).join("")}</div><div id="finding-detail" class="finding-detail"></div>` : '<p class="empty-finding">No supported technique identified in this line. Other optimal lines may contain one. You can still step through the play and inspect the double-dummy table.</p>'}</div>
-    <div class="analysis-details"><details><summary>Trick-by-trick play</summary><div id="trick-ledger"></div></details><details><summary>Double-dummy table &amp; par</summary>${tableMarkup(a)}<p class="detail-note">Par alternatives: ${a.par.contracts.map((c) => escape(contractText(c))).join(", ")}.<br>One representative contract is replayed. Analysis took ${(a.milliseconds / 1000).toFixed(1)}s.</p></details></div>`;
+    <div class="analysis-details"><details><summary>Trick-by-trick play</summary><div id="trick-ledger"></div></details><details><summary>Double-dummy table &amp; par</summary>${tableMarkup(a)}<p class="detail-note">Par alternatives: ${a.par.contracts.map((c) => escape(contractText(c))).join(", ") || "Passed out"}.<br>PBN contract: ${row.sourceContract ? escape(contractText(row.sourceContract)) : "Not available"}.<br>Explored ${a.search.linesExamined} optimal continuations (${a.search.distinctLines} distinct); showing line ${a.search.selectedLine}. All findings refer to this replay. Analysis took ${(a.milliseconds / 1000).toFixed(1)}s.</p></details></div>`;
   $("show-played").addEventListener("change", (e) => {
     showPlayed = e.target.checked;
     renderReplay();
@@ -334,6 +340,8 @@ function createWorker() {
     clearTimeout(timeout);
     if (data.type === "result") {
       row.analysis = data.analysis;
+      row.analyses ??= {};
+      row.analyses[contractMode] = data.analysis;
       row.status = "done";
       row.error = null;
     } else {
@@ -387,7 +395,12 @@ function nextBoard() {
   if (selectedId === id) renderHand();
   try {
     worker ??= createWorker();
-    worker.postMessage({ type: "analyze", id, board: row });
+    worker.postMessage({
+      type: "analyze",
+      id,
+      board: row,
+      options: { contractMode },
+    });
   } catch (error) {
     failCurrent(error.message);
     return;
@@ -483,7 +496,6 @@ async function addFiles(files, autoAnalyze = false) {
   await persist(added);
   showErrors();
   $("technique-filter").value = "";
-  $("suit-filter").value = "";
   $("search").value = "";
   notice(
     `${added.length} ${added.length === 1 ? "hand" : "hands"} added.${duplicates ? ` ${duplicates} duplicate ${duplicates === 1 ? "deal" : "deals"} skipped.` : ""}${added.length ? " Ready to analyze." : ""}`,
@@ -502,6 +514,24 @@ async function addFiles(files, autoAnalyze = false) {
 }
 
 $("import-button").addEventListener("click", () => $("file-input").click());
+$("contract-mode").addEventListener("change", async (event) => {
+  await ready;
+  if (busy) return;
+  contractMode = event.target.value;
+  try {
+    localStorage.setItem("bridge-study-contract-mode", contractMode);
+  } catch {}
+  stopPlayback();
+  ply = 0;
+  findingIndex = 0;
+  rows.forEach(activateMode);
+  $("technique-filter").value = "";
+  renderLibrary();
+  renderHand();
+  notice(
+    `Showing ${contractMode === "source" ? "PBN" : "par"} contracts. Saved results are reused; choose Analyze for any remaining hands.`,
+  );
+});
 $("file-input").addEventListener("change", async (e) => {
   await addFiles([...e.target.files]);
   e.target.value = "";
@@ -556,14 +586,13 @@ $("hand-view").addEventListener("click", (event) => {
   } else if (jump) seek(Number(jump.dataset.ply));
 });
 $("search").addEventListener("input", renderLibrary);
-for (const id of ["technique-filter", "suit-filter"])
-  $(id).addEventListener("change", () => {
-    renderLibrary();
-    findingIndex = preferredFinding(currentRow());
-    renderHand();
-    const finding = currentRow()?.analysis?.findings[findingIndex];
-    if (finding) seek(finding.start);
-  });
+$("technique-filter").addEventListener("change", () => {
+  renderLibrary();
+  findingIndex = preferredFinding(currentRow());
+  renderHand();
+  const finding = currentRow()?.analysis?.findings[findingIndex];
+  if (finding) seek(finding.start);
+});
 $("clear-button").addEventListener("click", async () => {
   if (
     busy ||
@@ -593,10 +622,13 @@ $("export-button").addEventListener("click", () => {
   const result = {
     application: "Bridge Study",
     version: ANALYSIS_VERSION,
+    contractMode,
     exported: new Date().toISOString(),
     scope:
-      "One optimal line per board; findings are examples, not necessity proofs.",
-    boards: rows.filter((r) => r.analysis),
+      "One replay per contract mode selected from up to 12 optimal continuations; findings are examples, not necessity proofs.",
+    boards: rows.filter(
+      (r) => r.analysis || Object.keys(r.analyses || {}).length,
+    ),
   };
   const url = URL.createObjectURL(
     new Blob([JSON.stringify(result, null, 2)], { type: "application/json" }),
@@ -639,11 +671,14 @@ const ready = (async () => {
   try {
     rows = await loadCollection();
     rows.forEach((r) => {
-      if (r.status === "running") r.status = "queued";
-      if (r.analysis && r.analysis.version !== ANALYSIS_VERSION) {
-        r.status = "queued";
-        delete r.analysis;
-      }
+      Object.assign(r, sourceContractFromTags(r.tags));
+      r.analyses ??= {};
+      if (r.analysis?.version === ANALYSIS_VERSION)
+        r.analyses[r.analysis.requestedMode] = r.analysis;
+      for (const mode of Object.keys(r.analyses))
+        if (r.analyses[mode].version !== ANALYSIS_VERSION)
+          delete r.analyses[mode];
+      activateMode(r);
     });
   } catch {
     $("save-status").textContent =

@@ -1,6 +1,6 @@
-# Technique recognition, version 1
+# Technique recognition (analysis version 2)
 
-DDS establishes optimal trick counts. These detectors inspect one concrete, legal, optimal replay and attach bridge-pattern explanations. They are not an exhaustive taxonomy, a proof of necessity, or a claim that a human can find the line without seeing all cards.
+DDS establishes optimal trick counts. The unchanged detectors inspect each of up to 12 concrete, legal, optimal replays. The app retains one replay with more distinct technique types while preserving types found in the original line. All displayed evidence belongs to that replay. These detectors are not an exhaustive taxonomy, a proof of necessity, or a claim that a human can find the line without seeing all cards.
 
 Each finding stores zero-based card positions `start`/`end` (end exclusive), involved suits, title, explanation and evidence positions. Positions describe the state **before** the named card. Tricks start at 0, 4, 8, …, 48. The original deal plus the 52 chosen cards reconstruct the replay.
 
@@ -42,6 +42,7 @@ Single ruffs in each hand, short endings and lines failing the extra-trump-trick
 
 - No label is inferred solely from the initial distribution or final trick count.
 - Detectors do not select a losing move to demonstrate a technique.
-- No alternative optimal branches or non-par contracts are explored.
+- The search tries at most 12 deterministic continuations, including different optimal opening leads and declarer tie preferences; it is not exhaustive.
+- Par remains the default. The optional PBN-contract mode analyzes its supplied contract/declarer with optimal play and keeps its score separate from par.
 - “No technique identified” is not “no technique exists.”
 - All findings have explanations and replay jump points, not numeric confidence scores or necessity claims.

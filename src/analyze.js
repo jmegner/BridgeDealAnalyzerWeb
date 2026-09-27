@@ -1,15 +1,17 @@
-import {
-  initialState,
-  nextSeat,
-  playCard,
-  scoreContract,
-  holding,
-  rank,
-} from "./bridge.js";
-import { detectTechniques } from "./techniques.js";
+import { scoreContract, holding } from "./bridge.js";
+import { findOptimalPlay, MAX_SEARCH_LINES } from "./optimal-play.js";
+import { validSourceContract } from "./pbn.js";
 
-export const ANALYSIS_VERSION = 1;
-export function analyzeBoard(board, solver, onProgress = () => {}) {
+export const ANALYSIS_VERSION = 2;
+export function analyzeBoard(
+  board,
+  solver,
+  onProgress = () => {},
+  options = {},
+) {
+  const mode = options.contractMode ?? "par";
+  if (!["par", "source"].includes(mode))
+    throw new Error("Unknown contract mode.");
   const started = performance.now();
   onProgress({ phase: "Calculating the double-dummy table", fraction: 0 });
   const table = solver.table(board.hands);
@@ -19,7 +21,7 @@ export function analyzeBoard(board, solver, onProgress = () => {}) {
   // This keeps "dummy reversal" meaningful instead of arbitrarily swapping the roles.
   const length = (c) =>
     c.trump < 4 ? holding(board.hands, c.declarer, c.trump).length : 0;
-  const contract =
+  const parContract =
     [...par.contracts].sort(
       (a, b) =>
         a.trump - b.trump ||
@@ -27,72 +29,60 @@ export function analyzeBoard(board, solver, onProgress = () => {}) {
         a.declarer - b.declarer ||
         a.level - b.level,
     )[0] ?? null;
+  const useSource =
+    mode === "source" && validSourceContract(board.sourceContract);
+  const contract = useSource ? { ...board.sourceContract } : parContract;
+  const selection = {
+    requestedMode: mode,
+    contractOrigin: useSource ? "source" : "par",
+    fallbackReason:
+      mode === "source" && !useSource
+        ? board.sourceContractWarning ||
+          "No complete PBN contract and declarer supplied; using par."
+        : null,
+  };
   if (!contract)
     return {
       version: ANALYSIS_VERSION,
       table,
       par,
       contract,
+      ...selection,
+      scoreNS: 0,
+      search: {
+        linesExamined: 0,
+        distinctLines: 0,
+        selectedLine: 0,
+        limit: MAX_SEARCH_LINES,
+      },
       cards: [],
       findings: [],
       tricks: 0,
       milliseconds: performance.now() - started,
     };
-  solver.reset();
-  let state = initialState(board.hands, contract.trump, contract.declarer);
-  const states = [state],
-    cards = [],
-    expected = table[contract.trump * 4 + contract.declarer];
-  for (let ply = 0; ply < 52; ply++) {
-    const moves = solver.solve(state);
-    if (!moves.length) throw new Error("DDS returned no legal continuation.");
-    const remaining = 13 - state.completed.length;
-    const total =
-      state.won[contract.declarer % 2] +
-      (nextSeat(state) % 2 === contract.declarer % 2
-        ? moves[0].score
-        : remaining - moves[0].score);
-    if (total !== expected)
-      throw new Error(
-        `Optimal-play verification failed at card ${ply + 1}: ${total} tricks, expected ${expected}.`,
-      );
-    // Retain defensive honors when equally good plays exist. This often leaves
-    // the bridge mechanism visible instead of conceding its trick prematurely.
-    // Only maximum-score moves are eligible: no defensive cooperation is added.
-    const best = moves.filter((m) => m.score === moves[0].score);
-    if (nextSeat(state) % 2 !== contract.declarer % 2)
-      best.sort(
-        (a, b) =>
-          rank(a.card) - rank(b.card) || a.order - b.order || a.card - b.card,
-      );
-    const card = best[0].card;
-    cards.push(card);
-    state = playCard(state, card);
-    states.push(state);
-    if (ply % 4 === 3)
-      onProgress({
-        phase: `Playing trick ${Math.floor(ply / 4) + 1} of 13`,
-        fraction: (ply + 1) / 52,
-      });
-  }
-  const tricks = state.won[contract.declarer % 2];
-  if (tricks !== expected)
-    throw new Error("Replay result disagrees with the double-dummy table.");
+  const play = findOptimalPlay(
+    board.hands,
+    contract,
+    table[contract.trump * 4 + contract.declarer],
+    solver,
+    onProgress,
+    options.maxLines,
+  );
+  const { tricks } = play;
   const scoreNS =
     scoreContract(contract, tricks, board.vulnerable) *
     (contract.declarer % 2 ? -1 : 1);
-  if (scoreNS !== par.score)
+  if (!useSource && scoreNS !== par.score)
     throw new Error("Replay score disagrees with par.");
   onProgress({ phase: "Identifying techniques", fraction: 1 });
-  const findings = detectTechniques(states);
   return {
     version: ANALYSIS_VERSION,
     table,
     par,
     contract,
-    cards,
-    tricks,
-    findings,
+    ...selection,
+    ...play,
+    scoreNS,
     milliseconds: performance.now() - started,
   };
 }

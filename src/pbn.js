@@ -84,6 +84,52 @@ const VULS = {
   ew: 3,
 };
 const BOARD_VUL = [0, 2, 3, 1, 2, 3, 1, 0, 3, 1, 0, 2, 1, 0, 2, 3];
+export function validSourceContract(c) {
+  return (
+    !!c &&
+    Number.isInteger(c.level) &&
+    c.level >= 1 &&
+    c.level <= 7 &&
+    Number.isInteger(c.trump) &&
+    c.trump >= 0 &&
+    c.trump <= 4 &&
+    Number.isInteger(c.declarer) &&
+    c.declarer >= 0 &&
+    c.declarer <= 3 &&
+    Number.isInteger(c.doubled) &&
+    c.doubled >= 0 &&
+    c.doubled <= 2
+  );
+}
+
+export function sourceContractFromTags(tags = {}) {
+  const text = (tags.contract || "").trim().toUpperCase();
+  const declarer = SHORT_SEATS.indexOf(
+    (tags.declarer || "").trim().toUpperCase(),
+  );
+  const match = /^([1-7])(NT|[SHDCN])(X{0,2})$/.exec(text);
+  const sourceContract =
+    match && declarer >= 0
+      ? {
+          level: Number(match[1]),
+          trump: "SHDCN".indexOf(match[2][0]),
+          declarer,
+          doubled: match[3].length,
+        }
+      : null;
+  return {
+    sourceContract,
+    sourceContractWarning: sourceContract
+      ? null
+      : text === "PASS"
+        ? "The PBN records a pass-out; using par for study."
+        : !text || text === "?"
+          ? "No PBN contract supplied; using par."
+          : !match
+            ? "Invalid PBN Contract tag; using par."
+            : "Missing or invalid PBN Declarer tag; using par.",
+  };
+}
 export function parsePbn(text, source = "Imported PBN") {
   const boards = [],
     errors = [],
@@ -150,6 +196,7 @@ export function parsePbn(text, source = "Imported PBN") {
         dealer,
         vulnerable,
         hands: parseDeal(tags.deal),
+        ...sourceContractFromTags(tags),
         warnings,
         tags,
       });

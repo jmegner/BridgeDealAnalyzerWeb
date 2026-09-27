@@ -34,11 +34,7 @@ test("GitHub Pages subpath: actual WASM analysis, filters, replay, persistence a
     "must play one in front",
   );
   await expect(page.locator("#replay-position")).toHaveText("Card 44 / 52");
-  await page.locator("#suit-filter").selectOption("2");
   await expect(page.locator(".board-item")).toHaveCount(1);
-  await page.locator("#suit-filter").selectOption("0");
-  await expect(page.locator(".board-item")).toHaveCount(0);
-  await page.locator("#suit-filter").selectOption("");
   await page.locator("#technique-filter").selectOption("Dummy reversal");
   await expect(page.locator(".board-item").first()).toBeVisible();
   await page
