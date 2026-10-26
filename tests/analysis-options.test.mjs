@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import { parsePbn, sourceContractFromTags } from "../src/pbn.js";
 import { analyzeBoard, ANALYSIS_VERSION } from "../src/analyze.js";
 import { createSolver } from "../src/solver.js";
-import { replay, scoreContract } from "../src/bridge.js";
+import { replay, scoreContract, initialState, nextSeat, suit } from "../src/bridge.js";
 import { detectTechniques } from "../src/techniques.js";
 const cases = JSON.parse(
   readFileSync(
@@ -142,4 +142,51 @@ test("Missing or malformed source contracts fall back explicitly, and search bou
     () => analyzeBoard(b, solver, () => {}, { maxLines: 13 }),
     /between 1 and 12/,
   );
+});
+
+test("Every lead suit has its own verified result, score and technique replay, including inferior leads", () => {
+  const board = parsePbn(readFileSync(new URL("../samples/example-collection.pbn", import.meta.url), "utf8"))
+    .boards.find((b) => b.board === "19");
+  for (const contractMode of ["par", "source"]) {
+    const b = { ...board, sourceContract: { level: 4, trump: 1, declarer: 3, doubled: 2 } };
+    const progress = [];
+    const result = analyzeBoard(b, solver, (p) => progress.push(p.fraction), { contractMode, maxLines: 1 });
+    assert.deepEqual(result.leadAnalyses.map((lead) => lead.suit), [0, 1, 2, 3]);
+    assert.ok(result.leadAnalyses.some((lead) => !lead.optimal && lead.tricks > result.tricks));
+    assert.ok(progress.every((p, i) => p >= 0 && p <= 1 && (!i || p >= progress[i - 1])));
+    for (const lead of result.leadAnalyses) {
+      assert.equal(lead.available, true);
+      assert.equal(suit(lead.cards[0]), lead.suit);
+      const states = replay(b.hands, result.contract, lead.cards);
+      assert.equal(states.at(-1).completed.length, 13);
+      assert.equal(states.at(-1).won[result.contract.declarer % 2], lead.tricks);
+      assert.deepEqual(lead.findings, detectTechniques(states));
+      assert.equal(lead.scoreNS, scoreContract(result.contract, lead.tricks, b.vulnerable) * -1);
+      assert.equal(lead.optimal, lead.tricks === result.tricks);
+      solver.reset();
+      for (let ply = 0; ply < 52; ply++) {
+        const moves = solver.solve(states[ply]).filter((m) => ply || suit(m.card) === lead.suit);
+        const chosen = moves.find((m) => m.card === lead.cards[ply]);
+        assert.equal(chosen.score, Math.max(...moves.map((m) => m.score)));
+        const defending = nextSeat(states[ply]) % 2 !== result.contract.declarer % 2;
+        const total = states[ply].won[result.contract.declarer % 2] +
+          (defending ? 13 - states[ply].completed.length - chosen.score : chosen.score);
+        assert.equal(total, lead.tricks);
+      }
+    }
+  }
+});
+
+test("Void lead suits are unavailable, and passed-out boards have no lead replays", () => {
+  const b = {
+    hands: [0, 1, 2, 3].map((s) => Array.from({ length: 13 }, (_, r) => s * 13 + r)),
+    dealer: 0, vulnerable: 0,
+    sourceContract: { level: 1, trump: 4, declarer: 0, doubled: 0 },
+  };
+  const result = analyzeBoard(b, solver, () => {}, { contractMode: "source", maxLines: 1 });
+  assert.deepEqual(result.leadAnalyses.filter((lead) => !lead.available),
+    [0, 2, 3].map((suit) => ({ suit, available: false })));
+  assert.equal(result.leadAnalyses[1].cards.length, 52);
+  const noPar = { ...solver, par: () => ({ score: 0, contracts: [] }) };
+  assert.deepEqual(analyzeBoard(b, noPar).leadAnalyses, []);
 });

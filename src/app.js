@@ -3,6 +3,7 @@ import {
   SEATS,
   SHORT_SEATS,
   SYMBOLS,
+  SUITS,
   RANKS,
   suit,
   rank,
@@ -47,6 +48,7 @@ let rows = [],
   states = [],
   ply = 0,
   findingIndex = 0,
+  selectedLeadSuit = null,
   showPlayed = false;
 let worker = null,
   busy = false,
@@ -57,11 +59,23 @@ let worker = null,
   playback = null;
 let importErrors = [];
 const currentRow = () => rows.find((r) => r.id === selectedId);
+const leadPlays = (analysis) => analysis?.leadAnalyses?.filter((lead) => lead.available) || [];
+const allFindings = (analysis) => leadPlays(analysis).flatMap((lead) => lead.findings);
+function currentAnalysis(row = currentRow()) {
+  const analysis = row?.analysis;
+  const lead = leadPlays(analysis).find((lead) => lead.suit === selectedLeadSuit);
+  return lead ? { ...analysis, ...lead } : analysis;
+}
 function preferredFinding(row) {
   const technique = $("technique-filter").value;
+  const leads = leadPlays(row?.analysis);
+  const lead = leads.find((lead) =>
+    technique && lead.findings.some((f) => f.technique === technique),
+  );
+  selectedLeadSuit = lead?.suit ?? (row?.analysis?.cards.length ? suit(row.analysis.cards[0]) : null);
   return Math.max(
     0,
-    row?.analysis?.findings.findIndex(
+    currentAnalysis(row)?.findings.findIndex(
       (f) => !technique || f.technique === technique,
     ) ?? 0,
   );
@@ -92,7 +106,7 @@ function filteredRows() {
   const query = $("search").value.trim().toLowerCase(),
     technique = $("technique-filter").value;
   return rows.filter((r) => {
-    const findings = r.analysis?.findings || [];
+    const findings = allFindings(r.analysis);
     const searchable =
       `${r.board} ${r.source} ${r.event} ${findings.map((f) => `${f.technique} ${f.title}`).join(" ")}`.toLowerCase();
     if (query && !searchable.includes(query)) return false;
@@ -118,8 +132,8 @@ function renderLibrary() {
   $("contract-mode").disabled = busy;
   $("contract-mode-note").textContent =
     contractMode === "par"
-      ? "Perfect bidding, including sacrifices. Explore up to 12 optimal plays and keep one useful line."
-      : "Study the PBN's Contract and Declarer. Hands without a usable contract use par.";
+      ? "Perfect bidding, including sacrifices. Compare opening leads in every available suit."
+      : "Study the PBN's Contract and Declarer with leads in every suit. Hands without a usable contract use par.";
   const completed = rows.filter((r) => r.status === "done").length;
   const pending = rows.filter(
     (r) => r.status === "queued" || r.status === "error",
@@ -143,7 +157,7 @@ function renderLibrary() {
         .map((r) => {
           const a = r.analysis,
             techniques = [
-              ...new Set(a?.findings.map((f) => f.technique) || []),
+              ...new Set(allFindings(a).map((f) => f.technique)),
             ];
           return `<button class="board-item ${r.id === selectedId ? "active" : ""}" data-id="${r.id}" aria-pressed="${r.id === selectedId}">
       <div class="board-item-top"><span class="board-number">Board ${escape(r.board)}</span><span class="board-contract">${a ? escape(contractText(a.contract)) : r.status === "running" ? "◌" : "—"}</span></div>
@@ -156,7 +170,7 @@ function renderLibrary() {
                   `<span class="badge ${t === "Squeeze" ? "squeeze" : ""}">${escape(t)}</span>`,
               )
               .join("")
-          : `<span class="board-status ${r.status === "error" ? "error" : ""}">${r.status === "done" ? (a.contract ? "No technique identified in this line" : "Passed out at par") : r.status === "running" ? "Analyzing this hand…" : r.status === "error" ? "Analysis interrupted · retry available" : "Ready to analyze"}</span>`
+          : `<span class="board-status ${r.status === "error" ? "error" : ""}">${r.status === "done" ? (a.contract ? "No technique identified in these leads" : "Passed out at par") : r.status === "running" ? "Analyzing this hand…" : r.status === "error" ? "Analysis interrupted · retry available" : "Ready to analyze"}</span>`
       }
     </button>`;
         })
@@ -180,6 +194,16 @@ function selectHand(id) {
 function tableMarkup(a) {
   return `<table class="data-table"><caption class="detail-note">Maximum declarer tricks against best defense</caption><thead><tr><th scope="col">Strain</th>${SHORT_SEATS.map((s) => `<th scope="col">${s}</th>`).join("")}</tr></thead><tbody>${[4, 0, 1, 2, 3].map((s) => `<tr><th scope="row" class="${s === 1 || s === 2 ? "red" : ""}">${SYMBOLS[s]}</th>${[0, 1, 2, 3].map((d) => `<td>${a.table[s * 4 + d]}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
 }
+function leadMarkup(analysis) {
+  return `<div class="lead-analysis"><h3>Compare opening leads</h3><p class="detail-note">Best defense within each suit, followed by best play. Select a suit to study its replay and findings.</p><div class="lead-options">${analysis.leadAnalyses.map((lead) => {
+    const selected = lead.suit === selectedLeadSuit;
+    if (!lead.available)
+      return `<button class="lead-option" disabled><strong>${SYMBOLS[lead.suit]} ${SUITS[lead.suit]}</strong><span>No cards to lead</span></button>`;
+    const extra = lead.tricks - analysis.tricks;
+    const types = [...new Set(lead.findings.map((f) => f.technique))];
+    return `<button class="lead-option ${selected ? "selected" : ""}" data-lead-suit="${lead.suit}" aria-pressed="${selected}"><strong class="${[1, 2].includes(lead.suit) ? "red" : ""}">${SYMBOLS[lead.suit]} ${SUITS[lead.suit]} · ${cardText(lead.cards[0])}</strong><span>${lead.tricks} tricks · ${resultText(analysis.contract, lead.tricks)}</span><span>${lead.optimal ? "Best defense" : `+${extra} declarer ${extra === 1 ? "trick" : "tricks"}`}</span><span>${types.length ? types.map(escape).join(" · ") : "No technique identified"}</span></button>`;
+  }).join("")}</div></div>`;
+}
 function renderHand() {
   const row = currentRow();
   $("study-empty").hidden = !!row;
@@ -191,11 +215,13 @@ function renderHand() {
   if (!row.analysis) {
     states = [];
     $("hand-view").innerHTML =
-      `<div class="pending-view"><p class="eyebrow">BOARD ${escape(row.board)}</p><h2>${row.status === "running" ? "Finding the story in this hand…" : row.status === "error" ? "This hand needs another look." : "Your hand is ready."}</h2><p>${row.status === "error" ? escape(row.error) : row.status === "running" ? "Exploring optimal plays and looking for techniques. You can browse completed hands while this runs." : `Choose Analyze hands to study ${contractMode === "source" ? "the PBN contract" : "the par contract"} and find a useful line of optimal play.`}</p>${contractMode === "source" ? `<p>${row.sourceContract ? `PBN contract: ${escape(contractText(row.sourceContract))}.` : escape(row.sourceContractWarning)}</p>` : ""}${row.status === "error" && !busy ? '<button class="button primary" id="retry-hand">Retry this hand →</button>' : ""}</div>`;
+      `<div class="pending-view"><p class="eyebrow">BOARD ${escape(row.board)}</p><h2>${row.status === "running" ? "Finding the story in this hand…" : row.status === "error" ? "This hand needs another look." : "Your hand is ready."}</h2><p>${row.status === "error" ? escape(row.error) : row.status === "running" ? "Exploring optimal plays and looking for techniques. You can browse completed hands while this runs." : `Choose Analyze hands to study ${contractMode === "source" ? "the PBN contract" : "the par contract"} and compare leads in each available suit.`}</p>${contractMode === "source" ? `<p>${row.sourceContract ? `PBN contract: ${escape(contractText(row.sourceContract))}.` : escape(row.sourceContractWarning)}</p>` : ""}${row.status === "error" && !busy ? '<button class="button primary" id="retry-hand">Retry this hand →</button>' : ""}</div>`;
     $("retry-hand")?.addEventListener("click", () => startAnalysis(row.id));
     return;
   }
-  const a = row.analysis;
+  if (!leadPlays(row.analysis).some((lead) => lead.suit === selectedLeadSuit))
+    findingIndex = preferredFinding(row);
+  const a = currentAnalysis(row);
   if (!a.contract) {
     states = [];
     $("hand-view").innerHTML =
@@ -206,14 +232,15 @@ function renderHand() {
   const techniques = a.findings;
   findingIndex = Math.min(findingIndex, Math.max(0, techniques.length - 1));
   $("hand-view").innerHTML = `
-    <div class="hand-heading"><div><p class="eyebrow">ONE OPTIMAL LINE · ALL CARDS KNOWN</p><h2>Board ${escape(row.board)}</h2><small>${escape(row.event || row.source)}</small></div><div class="par-summary"><div class="contract-large">${escape(contractText(a.contract))} <span class="result">${resultText(a.contract, a.tricks)}</span></div><small>${a.contractOrigin === "source" ? "PBN contract" : "Par contract"} · N–S ${a.scoreNS > 0 ? "+" : ""}${a.scoreNS}</small>${a.contractOrigin === "source" ? `<br><small>Par benchmark · N–S ${a.par.score > 0 ? "+" : ""}${a.par.score}</small>` : ""}</div></div>
-    <div class="hand-meta"><span>Dealer <strong>${SEATS[row.dealer]}</strong></span><span>Vulnerable <strong>${vulnerability[row.vulnerable]}</strong></span><span>Declarer <strong>${SEATS[a.contract.declarer]}</strong></span><span><strong>${a.tricks}</strong> tricks with best play</span></div>
+    <div class="hand-heading"><div><p class="eyebrow">${a.optimal ? "ONE OPTIMAL LINE" : "OPTIMAL PLAY AFTER THIS LEAD"} · ALL CARDS KNOWN</p><h2>Board ${escape(row.board)}</h2><small>${escape(row.event || row.source)}</small></div><div class="par-summary"><div class="contract-large">${escape(contractText(a.contract))} <span class="result">${resultText(a.contract, a.tricks)}</span></div><small>${a.contractOrigin === "source" ? "PBN contract" : "Par contract"} · N–S ${a.scoreNS > 0 ? "+" : ""}${a.scoreNS}</small>${a.contractOrigin === "source" || !a.optimal ? `<br><small>Par benchmark · N–S ${a.par.score > 0 ? "+" : ""}${a.par.score}</small>` : ""}</div></div>
+    <div class="hand-meta"><span>Dealer <strong>${SEATS[row.dealer]}</strong></span><span>Vulnerable <strong>${vulnerability[row.vulnerable]}</strong></span><span>Declarer <strong>${SEATS[a.contract.declarer]}</strong></span><span><strong>${a.tricks}</strong> tricks after the ${SUITS[selectedLeadSuit].toLowerCase()} lead</span></div>
+    ${leadMarkup(row.analysis)}
     ${row.warnings.length ? `<div class="warnings">${row.warnings.map(escape).join(" ")}</div>` : ""}
     ${a.fallbackReason ? `<div class="warnings">${escape(a.fallbackReason)}</div>` : ""}
     <div class="deal-area"><div class="deal-toolbar"><span id="deal-caption">The full deal</span><label><input type="checkbox" id="show-played" ${showPlayed ? "checked" : ""}> Show played cards</label></div><div class="deal-table" id="deal-table"></div><p class="replay-caption" id="replay-caption" aria-live="polite"></p></div>
     <div class="replay-controls"><input type="range" id="play-slider" min="0" max="52" value="${ply}" aria-label="Card position in replay"><div class="replay-buttons"><div class="transport"><button id="first-card" aria-label="Go to beginning" title="Beginning">⇤</button><button id="previous-card" aria-label="Previous card" title="Previous card (←)">←</button><button class="play" id="toggle-play" aria-label="Play replay" title="Play or pause (space)">▶</button><button id="next-card" aria-label="Next card" title="Next card (→)">→</button><button id="last-card" aria-label="Go to end" title="End">⇥</button></div><span class="replay-position" id="replay-position"></span><span class="keyboard-hint">← → to step · space to play</span></div></div>
     <div class="findings"><div class="section-label"><h3>What to look for</h3><small>FOUND IN THIS LINE</small></div>${techniques.length ? `<div class="finding-tabs">${techniques.map((f, i) => `<button class="finding-tab ${i === findingIndex ? "selected" : ""}" data-finding="${i}">${escape(f.technique)}</button>`).join("")}</div><div id="finding-detail" class="finding-detail"></div>` : '<p class="empty-finding">No supported technique identified in this line. Other optimal lines may contain one. You can still step through the play and inspect the double-dummy table.</p>'}</div>
-    <div class="analysis-details"><details><summary>Trick-by-trick play</summary><div id="trick-ledger"></div></details><details><summary>Double-dummy table &amp; par</summary>${tableMarkup(a)}<p class="detail-note">Par alternatives: ${a.par.contracts.map((c) => escape(contractText(c))).join(", ") || "Passed out"}.<br>PBN contract: ${row.sourceContract ? escape(contractText(row.sourceContract)) : "Not available"}.<br>Explored ${a.search.linesExamined} optimal continuations (${a.search.distinctLines} distinct); showing line ${a.search.selectedLine}. All findings refer to this replay. Analysis took ${(a.milliseconds / 1000).toFixed(1)}s.</p></details></div>`;
+    <div class="analysis-details"><details><summary>Trick-by-trick play</summary><div id="trick-ledger"></div></details><details><summary>Double-dummy table &amp; par</summary>${tableMarkup(a)}<p class="detail-note">Par alternatives: ${a.par.contracts.map((c) => escape(contractText(c))).join(", ") || "Passed out"}.<br>PBN contract: ${row.sourceContract ? escape(contractText(row.sourceContract)) : "Not available"}.<br>Explored ${a.search.linesExamined} continuations (${a.search.distinctLines} distinct); showing line ${a.search.selectedLine}. All findings refer to this replay. Analysis took ${(a.milliseconds / 1000).toFixed(1)}s.</p></details></div>`;
   $("show-played").addEventListener("change", (e) => {
     showPlayed = e.target.checked;
     renderReplay();
@@ -230,7 +257,7 @@ function renderHand() {
   renderReplay();
 }
 function renderFinding() {
-  const finding = currentRow()?.analysis?.findings[findingIndex];
+  const finding = currentAnalysis()?.findings[findingIndex];
   if (!finding || !$("finding-detail")) return;
   $("finding-detail").innerHTML =
     `<h4>${escape(finding.title)}</h4><p>${escape(finding.explanation)}</p><div class="evidence-list">${finding.evidence.map((e) => `<button class="evidence-step" data-ply="${e.ply}"><span>TRICK ${Math.floor(e.ply / 4) + 1} ↗</span>${escape(e.text)}</button>`).join("")}</div>`;
@@ -246,7 +273,7 @@ function renderFinding() {
 function renderReplay() {
   if (!states.length) return;
   const row = currentRow(),
-    a = row.analysis,
+    a = currentAnalysis(row),
     s = states[ply];
   const lastTrick = s.completed.at(-1),
     displayed = s.trick.length ? s.trick : ply > 0 ? lastTrick.plays : [];
@@ -375,7 +402,7 @@ function nextBoard() {
     currentId = null;
     $("progress-panel").hidden = true;
     const withTechniques = rows.filter(
-      (r) => r.analysis?.findings.length,
+      (r) => allFindings(r.analysis).length,
     ).length;
     const failed = rows.filter((r) => r.status === "error").length;
     notice(
@@ -524,6 +551,7 @@ $("contract-mode").addEventListener("change", async (event) => {
   stopPlayback();
   ply = 0;
   findingIndex = 0;
+  selectedLeadSuit = null;
   rows.forEach(activateMode);
   $("technique-filter").value = "";
   renderLibrary();
@@ -578,11 +606,18 @@ $("board-list").addEventListener("click", (event) => {
 });
 $("hand-view").addEventListener("click", (event) => {
   const tab = event.target.closest("[data-finding]"),
-    jump = event.target.closest("[data-ply]");
-  if (tab) {
+    jump = event.target.closest("[data-ply]"),
+    lead = event.target.closest("[data-lead-suit]");
+  if (lead) {
+    stopPlayback();
+    selectedLeadSuit = Number(lead.dataset.leadSuit);
+    findingIndex = 0;
+    ply = 0;
+    renderHand();
+  } else if (tab) {
     findingIndex = Number(tab.dataset.finding);
     renderFinding();
-    seek(currentRow().analysis.findings[findingIndex].start);
+    seek(currentAnalysis().findings[findingIndex].start);
   } else if (jump) seek(Number(jump.dataset.ply));
 });
 $("search").addEventListener("input", renderLibrary);
@@ -590,7 +625,7 @@ $("technique-filter").addEventListener("change", () => {
   renderLibrary();
   findingIndex = preferredFinding(currentRow());
   renderHand();
-  const finding = currentRow()?.analysis?.findings[findingIndex];
+  const finding = currentAnalysis()?.findings[findingIndex];
   if (finding) seek(finding.start);
 });
 $("clear-button").addEventListener("click", async () => {
@@ -625,7 +660,7 @@ $("export-button").addEventListener("click", () => {
     contractMode,
     exported: new Date().toISOString(),
     scope:
-      "One replay per contract mode selected from up to 12 optimal continuations; findings are examples, not necessity proofs.",
+      "One replay per available opening-lead suit and contract mode, using best defense within that suit and optimal play thereafter; findings are examples, not necessity proofs.",
     boards: rows.filter(
       (r) => r.analysis || Object.keys(r.analyses || {}).length,
     ),

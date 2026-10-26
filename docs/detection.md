@@ -1,6 +1,6 @@
-# Technique recognition (analysis version 2)
+# Technique recognition (analysis version 3)
 
-DDS establishes optimal trick counts. The unchanged detectors inspect each of up to 12 concrete, legal, optimal replays. The app retains one replay with more distinct technique types while preserving types found in the original line. All displayed evidence belongs to that replay. These detectors are not an exhaustive taxonomy, a proof of necessity, or a claim that a human can find the line without seeing all cards.
+DDS establishes optimal trick counts. The unchanged detectors inspect up to 12 concrete, legal continuations for each available opening-lead suit. Leads use best defense within their suit, and every subsequent move is optimal for the resulting position. The app retains one replay per suit with more distinct technique types while preserving types found in that search’s original line. All displayed evidence belongs to the selected suit’s replay. These detectors are not an exhaustive taxonomy, a proof of necessity, or a claim that a human can find the line without seeing all cards.
 
 Each finding stores zero-based card positions `start`/`end` (end exclusive), involved suits, title, explanation and evidence positions. Positions describe the state **before** the named card. Tricks start at 0, 4, 8, …, 48. The original deal plus the 52 chosen cards reconstruct the replay.
 
@@ -41,8 +41,8 @@ Single ruffs in each hand, short endings and lines failing the extra-trump-trick
 ## Boundaries
 
 - No label is inferred solely from the initial distribution or final trick count.
-- Detectors do not select a losing move to demonstrate a technique.
-- The search tries at most 12 deterministic continuations, including different optimal opening leads and declarer tie preferences; it is not exhaustive.
+- Each available opening-lead suit is studied using its best defensive leads, even when that suit concedes tricks compared with the overall optimal lead. Every later move preserves the result after that lead; detectors do not select subsequent losing moves to demonstrate a technique.
+- The search tries at most 12 deterministic continuations per available lead suit (at most 48 total), including alternative best leads in that suit and declarer tie preferences; it is not exhaustive. The default replay remains optimal against unrestricted best defense. Each suit’s findings belong only to its own replay.
 - Par remains the default. The optional PBN-contract mode analyzes its supplied contract/declarer with optimal play and keeps its score separate from par.
 - “No technique identified” is not “no technique exists.”
 - All findings have explanations and replay jump points, not numeric confidence scores or necessity claims.

@@ -63,6 +63,7 @@ export function findOptimalPlay(
   solver,
   onProgress,
   maxLines = MAX_SEARCH_LINES,
+  openingSuit = null,
 ) {
   if (
     !Number.isInteger(maxLines) ||
@@ -102,7 +103,11 @@ export function findOptimalPlay(
     const states = [state],
       cards = [];
     for (let ply = 0; ply < 52; ply++) {
-      const moves = solver.solve(state);
+      // Restrict only the opening lead. Later moves use the best value for the
+      // resulting position, which may differ from the unrestricted DD table.
+      const moves = solver.solve(state).filter(
+        (m) => ply !== 0 || openingSuit === null || suit(m.card) === openingSuit,
+      );
       if (!moves.length) throw new Error("DDS returned no legal continuation.");
       const bestScore = Math.max(...moves.map((m) => m.score));
       const defending = nextSeat(state) % 2 !== contract.declarer % 2;
@@ -154,7 +159,7 @@ export function findOptimalPlay(
     }
     const tricks = state.won[contract.declarer % 2];
     if (tricks !== expected)
-      throw new Error("Replay result disagrees with the double-dummy table.");
+      throw new Error("Replay result disagrees with the expected trick count.");
     const key = cards.join(",");
     if (distinct.has(key)) continue;
     distinct.add(key);

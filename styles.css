@@ -674,6 +674,43 @@ progress::-webkit-progress-value {
   font-weight: 600;
   color: #5b6d59;
 }
+.lead-analysis {
+  padding: 16px 28px;
+  border-bottom: 1px solid var(--line);
+}
+.lead-analysis h3 {
+  margin: 0;
+  font-size: 14px;
+}
+.lead-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.lead-option {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper, #fffef8);
+  color: inherit;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.lead-option strong, .lead-option span {
+  display: block;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.lead-option.selected {
+  border-color: #5b6d59;
+  background: #edf1e7;
+  box-shadow: inset 0 0 0 1px #5b6d59;
+}
+.lead-option:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
 .deal-area {
   background: #f8f8f0;
   padding: 15px 25px 20px;

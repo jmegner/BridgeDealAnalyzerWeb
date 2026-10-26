@@ -164,3 +164,42 @@ test("Different PBN contracts survive deduplication and invalid contracts fall b
     fullPage: true,
   });
 });
+
+test("Suit comparison switches results, replay and findings, and exports every lead", async ({ page }) => {
+  const records = readFileSync("samples/example-collection.pbn", "utf8");
+  const endplay = records.split(/\r?\n\s*\r?\n/).find((s) => s.includes('[Board "19"]'));
+  await page.goto("./");
+  await page.locator("#file-input").setInputFiles(upload("endplay.pbn", endplay));
+  await page.locator("#analyze-button").click();
+  await expect(page.locator("#analyze-button")).toHaveText(/Analysis complete/, { timeout: 45000 });
+  await expect(page.locator(".lead-option")).toHaveCount(4);
+  await expect(page.locator('[data-lead-suit="0"]')).toContainText("Best defense");
+  await page.locator('[data-lead-suit="1"]').click();
+  await expect(page.locator('[data-lead-suit="1"]')).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator(".hand-meta")).toContainText("12 tricks after the hearts lead");
+  await expect(page.locator(".par-summary")).toContainText("-480");
+  await expect(page.locator(".par-summary")).toContainText("Par benchmark");
+  await expect(page.locator('[data-lead-suit="1"]')).toContainText("+1 declarer trick");
+  await page.getByRole("button", { name: "Go to end", exact: true }).click();
+  await expect(page.locator("#replay-caption")).toContainText("12 tricks");
+  await page.locator('[data-lead-suit="0"]').click();
+  await expect(page.locator("#replay-position")).toHaveText("Card 0 / 52");
+  await expect(page.locator(".hand-meta")).toContainText("11 tricks after the spades lead");
+  await expect(page.locator("#finding-detail")).toContainText("throw");
+  await page.locator('[data-lead-suit="1"]').click();
+  await page.locator("#technique-filter").selectOption("Elimination / endplay");
+  await expect(page.locator('[data-lead-suit="0"]')).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator("#finding-detail")).toContainText("throw");
+  const result = await exported(page);
+  expect(result.boards[0].analysis.leadAnalyses).toHaveLength(4);
+  for (const lead of result.boards[0].analysis.leadAnalyses) {
+    expect(lead.cards).toHaveLength(52);
+    expect(lead.cards[0] / 13 | 0).toBe(lead.suit);
+  }
+  await page.reload();
+  await expect(page.locator(".lead-option")).toHaveCount(4);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.locator('[data-lead-suit="3"]').click();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.screenshot({ path: "test-results/lead-comparison-mobile.png", fullPage: true });
+});
